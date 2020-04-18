@@ -1,1 +1,1 @@
-# HOTEL BAYVIEW
+# hotel
