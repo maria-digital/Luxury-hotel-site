@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="list.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<img src="images/luxury-hotel.svg" class="header__logo">
+				<nav>
+					<ul class="container header__links">
+						<li><a href="index.html" class="header__links_link">Hoome</a></li>
+						<li><a href="list.html" class="header__links_link">Rooms</a></li>
+						<li><a href="room.html" class="header__links_link">Single Room</a></li>
+						<li><a href="" class="header__links_link">Booking</a></li>
+						<li><a href="" class="header__links_link">Our News</a></li>
+						<li><a href="" class="header__links_link">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="intro">
+				<h2 class="intro__title">SEARCH</h2>
+			</section>
+
+			<section class="search">
+			<div>
+					<div class="search__container">
+					<h5 class="search__subtitle">All Branches</h5>
+					<div>
+						<ul class="container__check">
+							<li>
+								<div class="search__check">
+									<span class="check__title">CHECK-IN</span>
+									<br>
+									<div class="container__input">
+										<input type="text" placeholder="26" class= "formContainer__inputs_input search__input">
+									<select size="1" name="mouns" id="" class="formContainer__select search__mouns">
+										<option>Jan</option>
+										<option>Feb</option>
+										<option>Mar</option>
+										<option>Apr</option>
+										<option>May</option>
+										<option>Jun</option>
+										<option>Jul</option>
+										<option>Aug</option>
+										<option>Sep</option>
+										<option>Oct</option>
+										<option>Nov</option>
+										<option>Dec</option>
+									</select>
+									</div>
+									
+								</div>
+							</li>
+							<li>
+								<div class="search__check">	
+									<span class="check__title">CHECK-OUT</span>
+									<br>
+									<div class="container__input">
+									<input type="text" placeholder="28" class= "formContainer__inputs_input search__input">
+									<select name="mouns" id="" class="formContainer__select search__mouns">
+										<option>Jan</option>
+										<option>Feb</option>
+										<option>Mar</option>
+										<option>Apr</option>
+										<option>May</option>
+										<option>Jun</option>
+										<option>Jul</option>
+										<option>Aug</option>
+										<option>Sep</option>
+										<option>Oct</option>
+										<option>Nov</option>
+										<option>Dec</option>
+									</select>
+								</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="container__check">
+							<li>
+								<div class="search__check search__guests">
+									<span class="check__title">GUESTS</span>
+									<br>
+									<input type="text" placeholder="1"  class= "formContainer__inputs_input search__input">
+								</div>
+							</li>
+							<li>
+								<div class="search__check search__guests">
+									<span class="check__title">NIGHTS</span>
+									<br>
+									<input type="text" placeholder="2"  class= "formContainer__inputs_input search__input">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<hr class="search__line">
+				<div class="servises__title">Services</div>
+				
+				<ul class="search__servises">
+					
+					<li>
+						<input type="checkbox" id="AnimalAllowed" name="" value="" class="search__checkbox">
+						<label for="AnimalAllowed">Animal Allowed</label>
+					</li>
+					<li>
+						<input type="checkbox" id="SmookingRoom" name="" value="" class="search__checkbox">
+						<label for="SmookingRoom">Smooking Room</label></li>
+					</li>
+					<li>
+						<input type="checkbox" id="SeaView" name="" value="" class="search__checkbox">
+						<label for="SeaView">Sea View</label>
+					</li>
+					<li>
+						<input type="checkbox" id="SwimmingPool" name="" value="" class="search__checkbox">
+						<label for="SwimmingPool">Swimming Pool</label>
+					</li>
+					<li>
+						<input type="checkbox" id="Wifi" name="" value="" class="search__checkbox">
+						<label for="Wifi">Wifi 24 H</label>
+					</li>
+					<li>
+						<input type="checkbox" id="BreakfastIncluded" name="" value="" class="search__checkbox">
+						<label for="BreakfastIncluded">Breakfast Included</label>
+					</li>
+				</ul>
+				<hr class="search__line">
+				<div class="servises__title">Room Size</div>
+				<ul class="search__roomsize">
+					<li><div class="search__size">0.0</div></li>
+					<li>-</li>
+					<li><div class="search__size">100</div></li>
+					<li class="search__m">m2</li>
+
+				</ul>
+				<hr class="search__line">
+				<div class="servises__title">Reviews</div>
+				<ul class="search__reviews">
+					<li><div class="search__rating">0.0</div></li>
+					<li><div class="search__rating">2.0</div></li>
+					<li><div class="search__rating">4.0</div></li>
+					<li><div class="search__rating">6.0</div></li>
+					<li><div class="search__rating">8.0</div></li>
+					<li><div class="search__rating">10</div></li>
+				</ul>
+			</div>
+			<div>
+				<div class="container__images">
+					<div class="search__container_image">
+						<img src="images/rooms/adriatic-suite.png" class="search__image">
+						<h4 class="suite__name search__suitename">Adriatic Suite</h4>
+						<a href="room.html" class="button__link"><h4 class="suite__subtitle search__subtitle_image">Adriatic Suite</h4></a>
+						<table cellspacing="12" class="search__description">
+							<tr>
+								<td class="suite__description_7">7.5</td>
+								<td class="suite__description_reviews">2 Reviews</td>
+								<td><img src="images/icons/user.svg" class="suite__description_user"></td>
+								<td class="suite__description_reviews">3 guests</td>
+								<td><img src="images/icons/plan.svg" class="suite__description_plan"></td>
+								<td class="suite__description_reviews">57 m²</td>
+							</tr>
+						</table>
+						<p class="search__text">
+							Offering 2&nbsp;balconies and views of&nbsp;Rovinj&rsquo;s 
+							Main Square and the lively waterfront.
+						</p>
+						<button class="search__button">BOOK NOW for 300$</button>
+					</div>
+
+					<div class="search__container_image">
+						<img src="images/rooms/atelier.png" class="search__image">
+						<h4 class="suite__name search__suitename">Atelier</h4>
+						<h4 class="suite__subtitle search__subtitle_image">Atelier</h4>
+						<table cellspacing="12" class="search__description">
+							<tr>
+								<td class="suite__description_7">8.0</td>
+								<td class="suite__description_reviews">5 Reviews</td>
+								<td><img src="images/icons/user.svg" class="suite__description_user"></td>
+								<td class="suite__description_reviews">2 guests</td>
+								<td><img src="images/icons/plan.svg" class="suite__description_plan"></td>
+								<td class="suite__description_reviews">25 m²</td>
+							</tr>
+						</table>
+						<p class="search__text">
+							Inspired by&nbsp;a&nbsp;workshop, Atelier rooms 
+							are a&nbsp;part of&nbsp;the old town&rsquo;s center.
+						</p>
+						<button class="search__button">BOOK NOW for 132$</button>
+					</div>
+				</div>
+
+				<div class="container__images">
+					<div class="search__container_image">
+						<img src="images/rooms/gallery.png" class="search__image">
+						<h4 class="suite__name search__suitename">Gallery</h4>
+						<h4 class="suite__subtitle search__subtitle_image">Gallery</h4>
+						<table cellspacing="12" class="search__description">
+							<tr>
+								<td class="suite__description_7">9.5</td>
+								<td class="suite__description_reviews">4 Reviews</td>
+								<td><img src="images/icons/user.svg" class="suite__description_user"></td>
+								<td class="suite__description_reviews">2 guests</td>
+								<td><img src="images/icons/plan.svg" class="suite__description_plan"></td>
+								<td class="suite__description_reviews">37 m²</td>
+							</tr>
+						</table>
+						<p class="search__text">
+							Set at&nbsp;the very top floor of&nbsp;the hotel, 
+							this suite is&nbsp;air-conditioned.
+						</p>
+						<button class="search__button">BOOK NOW for 435$</button>
+					</div>
+
+					<div class="search__container_image">
+						<img src="images/rooms/grand-piazza-suite.png" class="search__image">
+						<h4 class=" suite__name search__suitename">Grand Piazza Suite</h4>
+						<h4 class="suite__subtitle search__subtitle_image">Grand Piazza Suite</h4>
+						<table cellspacing="12" class="search__description">
+							<tr>
+								<td class="suite__description_7">9.8</td>
+								<td class="suite__description_reviews">7 Reviews</td>
+								<td><img src="images/icons/user.svg" class="suite__description_user"></td>
+								<td class="suite__description_reviews">4 guests</td>
+								<td><img src="images/icons/plan.svg" class="suite__description_plan"></td>
+								<td class="suite__description_reviews">78 m²</td>
+							</tr>
+						</table>
+						<p class="search__text">
+							Offering views of&nbsp;Rovinj&rsquo;s Main Square, 
+							this spacious suite is&nbsp;air-conditioned.
+						</p>
+						<button class="search__button">BOOK NOW for 610$</button>
+					</div>
+				</div>
+
+			</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+		</footer>
+	</div>
+</body>
+</html>

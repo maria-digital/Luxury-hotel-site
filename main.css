@@ -1,0 +1,609 @@
+
+@keyframes linksAnimation{
+	0%{
+		color: #878787;
+		text-decoration: none;
+	}
+	100%{
+		color: #ffffff;
+		text-decoration: underline;
+	}
+}
+
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header {
+	background-color: #1c1c1c;
+	height: 51px;
+	position: relative;
+	z-index: 1;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
+	width: 170px;
+	height: 20px;
+	margin: 15px 10px 15px 107px;
+	padding-left: 174px;
+}
+
+.header__links {
+	list-style: none;
+	width: 450px;
+	margin: 10px 188px 0px 0px;
+	padding: 0px 5px 0px 0px;
+}
+
+.header__links_link {
+	text-decoration: none;
+	color: #878787;
+	font-size: 10.5px;
+	font-weight: normal;
+	line-height: 1.95;
+	letter-spacing: 1.89px;
+}
+
+.header__links_link:hover{
+	animation: linksAnimation 2s 1 ease-in-out;
+	cursor: pointer;
+}
+
+.main {
+	background-image: url("images/background/main_background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 575px;
+	top: -390px;
+	padding: 0px 0px 380px 0px;
+}
+
+.main__container{
+	text-align: center;
+}
+
+.main__subtitle {
+	color: #ffffff;
+	font-size: 9px;
+	font-weight: normal;
+	line-height: 2.28;
+	letter-spacing: 1.1px;
+    padding: 453px 0px 15px 90px;
+}
+
+.main__title {
+	color: #ffffff;
+	font-family: 'Gilda Display', serif;
+	font-size: 52.5px;
+	font-weight: normal;
+	line-height: 1.28;
+	letter-spacing: 1.6px;
+	max-width: 470px;
+	margin: 0 auto;
+	padding: 0px 0px 0px 90px;
+}
+
+.main__button {
+	color: #ffffff;
+	background: transparent;
+	width: 144px;
+	height: 36px;
+	border: solid 1.5px #ffffff;
+	font-size: 8.5px;
+	font-weight: 900;
+	line-height: 2.41;
+	letter-spacing: 0.85px;
+	margin: 35px -90px 95px 0px;
+}
+
+.main__button:hover{
+	cursor: pointer;
+}
+
+.button__link {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.formContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.formContainer__inputs {
+	width: 405px;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffffff;
+	font-size: 9px;
+	font-weight: normal;
+	line-height: 2.28;
+	letter-spacing: 0.72px;
+	color: #a3a3a3;
+	margin: 0px -900px 0px 0px;
+}
+
+.form__checkin {
+	margin: 15px -60px 0px 55px;
+}
+
+.formContainer__inputs_input {
+	width: 56px;
+	height: 40px;
+	color: #878787;
+	font-family: GildaDisplay;
+	font-size: 37.5px;
+	line-height: 0.55;
+	letter-spacing: -2.25px;
+	border: none;
+}
+
+.formContainer__select {
+	font-family: GildaDisplay;
+	font-size: 9px;
+	font-weight: normal;
+	line-height: 2.28;
+	letter-spacing: -0.54px;
+	color: #1c1c1c;
+	border: none;
+}
+
+.form__checkout {
+	margin: 15px  -45px 0px 0px
+}
+
+.form__guests{
+	margin: 15px 50px 0px 0px;
+}
+
+.form__button {
+	background-color: #1c1c1c;
+	width: 135px;
+	height: 100px;
+	border: none;
+	font-size: 9px;
+	line-height: 1.72;
+	letter-spacing: 1.53px;
+	text-align: center;
+	padding: 0px 10px 0px 10px;
+	margin: 0px -90px 0px 0px;
+}
+
+.form__button:hover{
+	cursor: pointer;
+}
+
+.about{
+	display: flex;
+	height: 500px;
+	margin: -390px 0px -60px 0px;
+}
+
+.about__text {
+	text-align: center;
+	margin: 80px 0px 0px 325px;
+}
+
+.about__subtitle {
+	font-size: 10.5px;
+	line-height: 1.95;
+	letter-spacing: 1.16px;
+	color: #878787;
+	font-weight: normal;
+}
+
+.about__subtitle_position {
+	margin: 10px 45px 0px 0px;
+}
+
+.subtitle {
+	font-family: GildaDisplay;
+	font-weight: normal;
+	font-size: 60px;
+	line-height: 1;
+	color: #1c1c1c;
+	height: 107px;
+	width: 303px;
+	margin: 15px -110px 0px 17px;
+    letter-spacing: 2.2px;
+}
+
+.about__description {
+	font-size: 10.5px;
+	font-weight: normal;
+	line-height: 1.95;
+	letter-spacing: 0.65px;
+	color: #878787;
+	width: 360px;
+	height: 90px;
+	margin: 30px 0px 0px -25px;
+}
+
+.about__button {
+	width: 103px;
+	height: 33px;
+	background-color: #c19b76;
+	border: none;
+	font-size: 8.5px;
+	font-weight: 900;
+	line-height: 2.4;
+	letter-spacing: 0.85px;
+	color: #ffffff;
+	margin: 35px 0px 0px 0px;
+}
+
+.about__button:hover{
+	cursor: pointer;
+}
+
+.about__images {
+	list-style: none;
+	display: flex;
+	margin: 70px 0px 0px 0px;
+}
+
+.about__images_window {
+	width: 345px;
+	height: 230px;
+	position: relative;
+	z-index: 2;
+	bottom: -179px;
+}
+
+.about__images_bedroom {
+	width: 326px;
+	height: 218px;
+	position: relative;
+	z-index: 1;
+	left: -300px;
+}
+
+.about__images_bathroom {
+	width: 252px;
+	height: 341px;
+	position: relative;
+	z-index: 3;
+	left: -356px;
+	top: 35px;
+}
+
+.suite {
+	background-color: #f9f9f9;
+	height: 624px;
+}
+
+.suite__hotel {
+	text-align: center;
+	margin: 60px -93px 0px 0px;
+	padding: 58px 0px 0px 0px;
+}
+
+.suite__line {
+	color: #878787;
+	width: 23px;
+	size: 2px;
+	margin: 5px 0px 0px 705px;
+}
+
+.subtitle__rooms {
+	font-family: GildaDisplay;
+	font-size: 41.5px;
+	font-weight: normal;
+	line-height: 1.46;
+	text-align: center;
+	color: #1c1c1c;
+	margin: 0px -87px 0px 0px;
+    letter-spacing: 1px;
+}
+
+.suite__container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.suite__container_adriatic {
+	width: 428px;
+	height: 392px;
+	background-color: #ffffff;
+	margin: 30px -54px 0px 263px;
+}
+
+.suite__adriatic {
+	width: 428px;
+	height: 185px;
+}
+
+.suite__adriatic_name{
+	position: relative;
+	z-index: 1;
+	top: -45px;
+	right: -20px;
+	font-size: 8.5px;
+	font-weight: normal;
+	line-height: 2.4;
+	letter-spacing: 0.85px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.suite__subtitle {
+	font-family: GildaDisplay;
+	font-size: 22.5px;
+	font-weight: normal;
+	line-height: 0.7;
+	color: #1c1c1c;
+    letter-spacing: 1px;
+}
+
+.suite__subtitle_link {
+	text-decoration: none;
+}
+
+.suite__subtitle_size{
+	margin: -20px 222px 0px -25px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.table {
+	margin: 0px 0px 0px 5px;
+}
+
+.suite__description_7 {
+	width: 21px;
+	height: 20px;
+	background-color: #1c1c1c;
+	font-size: 8.5px;
+	font-weight: normal;
+	line-height: 2.4;
+	letter-spacing: -0.15px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.suite__description_reviews {
+	font-size: 9px;
+	font-weight: normal;
+	line-height: 2.3;
+	color: #878787;
+	text-transform: uppercase;
+}
+
+.suite__description_user {
+	width: 17px;
+	height: 17px;	
+}
+
+.suite__description_plan {
+	width: 16px;
+	height: 16px;
+}
+
+.suite__text {
+	font-size: 10.5px;
+	font-weight: normal;
+	line-height: 1.95;
+	color: #878787;
+	margin: 5px 0px 0px 25px;
+	width: 312px;
+	letter-spacing: 0.6px;
+}
+
+.suite__button {
+	width: 166px;
+	height: 35px;
+	background-color: #1c1c1c;
+	font-size: 8.5px;
+	font-weight: 900;
+	line-height: 2.4;
+	letter-spacing: 0.85px;
+	color: #ffffff;
+	border: none;
+	margin: 20px 0px 0px 23px;
+}
+
+.suite__button:hover{
+	cursor: pointer;
+}
+
+.suite__images{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	position: relative;
+	z-index: 0;
+	width: 428px;
+	margin-right: 170px;
+	padding-top: 12px;
+}
+
+.suite__images_image {
+	width: 203px;
+	height: 184px;
+	position: relative;
+	z-index: 0;
+}
+
+.suite__name{
+	position: relative;
+	z-index: 1;
+	right: 185px;
+	top: 145px;
+	font-size: 8.5px;
+	font-weight: normal;
+	line-height: 2.4;
+	letter-spacing: 0.85px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.suite__images_piazza{
+	margin-left: -20px;
+}
+
+.suite__name_gallery{
+	position: relative;
+	z-index: 1;
+	right: 185px;
+	top: 135px;
+	font-size: 8.5px;
+	font-weight: normal;
+	line-height: 2.4;
+	letter-spacing: 0.85px;
+	color: #ffffff;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.suite__images_grand{
+	margin-left: -25px;
+}
+
+.gallery {
+	height: 480px;
+}
+
+.gallery__container {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.gallery__container_images{
+	width: 720px;
+	height: 481px;
+}
+
+.gallery__images {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 720px;
+	height: 240px;
+	margin: 0px 0 0 -40px;
+}
+
+.gallery__images_foto {
+	width: 360px;
+	height: 240px;
+}
+
+.gallery__container_text {
+	width: 720px;
+	height: 481px;
+	background-color: #1c1c1c;
+}
+
+.gallery__subtitle {
+	color: #ffffff;
+	text-align: center;
+	letter-spacing: 0.1px;
+    margin: 66px 313px 0px 0px;
+}
+
+.gallery__subtitle_white {
+	color: #ffffff;
+	margin: 5px 0px 0px 77px;
+}
+
+.gallery__subtitle_broun {
+	color: #c19b76;
+	margin: -44px 0px 0px 29px;
+}
+
+.gallery__container_p {
+	display: flex;
+	justify-content: space-between;
+	margin-top: -25px;
+}
+
+.gallery_text {
+	font-size: 10.5px;
+	font-weight: 300;
+	line-height: 1.95;
+	letter-spacing: 0.2px;
+	color: #878787;
+	text-align: left;
+    margin: -30px 0px 0px 70px;
+}
+
+.gallery_text1 {
+	width: 248px;
+}
+
+.gallery_text2 {
+	width: 240px;
+	padding: 10px 0px 0px 50px;
+}
+
+.gallery__button {
+	width: 165px;
+	height: 33px;
+	background-color: #151515;
+	font-size: 8.5px;
+	font-weight: 900;
+	line-height: 2.4;
+	letter-spacing: 0.85px;
+	color: #ffffff;
+	border: none;
+	margin: 32px 320px 0px 0px;
+}
+
+.gallery__button:hover{
+	cursor: pointer;
+}
+
+.pluses {
+	height: 175px;
+}
+
+.pluses__container {
+	padding: 48px 0px 0px 88px;
+}
+
+.pluses__text {
+	width: 506px;
+	font-family: GildaDisplay;
+	font-size: 19px;
+	font-weight: normal;
+	line-height: 1.79;
+	color: #1c1c1c;
+	margin: 0 auto;
+	text-align: center;
+	letter-spacing: 0.7px;    
+}
+
+.footer {
+	height: 67px;
+	background-color: #151515;
+}
+
+.footer__links {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+    width: 340px;
+    text-align: center;
+    padding: 23px 0px 0px 280px;
+}
+
+.footer__links_link {
+	font-family: GildaDisplay;
+	font-size: 9.5px;
+	font-weight: normal;
+	line-height: 2.15;
+	letter-spacing: 2.31px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+

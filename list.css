@@ -1,0 +1,267 @@
+@keyframes reviewsAnimation{
+	0%{
+		background-color: #1c1c1c;
+	}
+	100%{
+		background-color:  #c19b76;
+	}
+}
+
+.intro {
+	background-image: url("images/background/list_background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 493px;
+    top: -248px;
+}
+
+.intro__title {
+	font-family: GildaDisplay;
+	font-size: 52px;
+	font-weight: normal;
+	line-height: 1.29;
+	letter-spacing: -0.8px;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 298px;
+    padding-left: 83px;
+}
+
+.search {
+	height: 940px;
+	display: flex;
+	margin-top: -250px;
+	padding-left: 280px;
+    padding-top: 10px;
+} 
+
+.search__container {
+	width: 278px;
+	height: 312px;
+	background-color: #151515;
+	text-align: center;
+}
+
+.search__subtitle {
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1.37;
+	letter-spacing: 0.6px;
+	color: #ffffff;
+	padding-top: 37px;
+    margin-left: 4px;
+}
+
+.container__check {
+	display: flex;
+	list-style: none;
+	margin-top: 45px;
+	margin-bottom: -30px;
+    justify-content: space-between;
+}
+
+.search__check {
+	width: 110px;
+	height: 92px;
+	font-size: 9px;
+	font-weight: normal;
+	line-height: 2.28;
+	letter-spacing: 0.72px;
+	color: #ffffff;
+	margin: 0px 11px 0px -6px;
+}
+
+.check__title {
+	margin-left: -20px;
+}
+
+.container__input {
+	display: flex;
+}
+
+.search__input {
+	background-color: #151515;
+	margin-left: 15px;
+    margin-right: 17px;
+}
+
+input::placeholder {
+  color: #c19b76;
+}
+
+.search__mouns {
+color: #c19b76;
+background-color: #151515;
+ margin-left: -18px;
+}
+
+.search__guests {
+    margin: 0 auto;
+}
+
+.search__line {
+	width: 279px;
+	height: 2px;
+	color: #f9f9f9;
+	border: solid 0.8px #f1f1f1;
+	margin-top: 20px;
+}
+
+.servises__title {
+	font-family: GildaDisplay;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1.37;
+	letter-spacing: 0.9px;
+	color: #1c1c1c;
+	margin-top: 18px;
+}
+
+.search__checkbox {
+	width: 10px;
+	height: 10px;
+	border-radius: 1.1px;
+	border: solid 0.4px #b3b3b3;
+	background-color: #ffffff;
+}
+
+.search__servises {
+	list-style: none;
+	font-size: 10.5px;
+	font-weight: normal;
+	line-height: 1.95;
+	letter-spacing: 0.63px;
+	color: #878787;
+	column-count: 2;
+	 width: 278px;
+	 margin-left: -35px;
+}
+
+.search__roomsize {
+	display: flex;
+	list-style: none;
+	margin-left: -38px;
+}
+
+.search__size {
+	width: 48px;
+	height: 24px;
+	background-color: #1c1c1c;
+    font-size: 9.5px;
+    font-weight: normal;
+    line-height: 2.16;
+    letter-spacing: -0.19px;
+    color: #ffffff;
+    margin-right: 15px;
+    padding-left: 4px;
+    padding-top: 2px;
+}
+
+.search__m {
+	font-size: 9px;
+	font-weight: normal;
+	line-height: 2.28;
+	letter-spacing: normal;
+	color: #878787;
+	text-transform: uppercase;
+}
+
+.search__reviews {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 230px;
+	margin-top: 23px;
+    margin-left: -38px;
+}
+
+.search__rating {
+	width: 30px;
+	height: 25px;
+	background-color: #1c1c1c;
+	font-size: 9.5px;
+	font-weight: normal;
+	line-height: 2.16;
+	letter-spacing: -0.19px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.search__rating:hover {
+	animation: reviewsAnimation 3s 1 ease-in-out;
+	cursor: pointer;
+}
+
+.container__images {
+	display: flex;
+	width: 580px;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.search__container_image {
+	width: 278px;
+	height: 387px;
+	border: solid 0.8px #f1f1f1;
+}
+
+.search__image {
+	width: 278px;
+	height: 186px;
+	position: relative;
+	z-index: 0;
+}
+
+
+.search__suitename {
+	position: relative;
+	z-index: 1;
+	right: -20px;
+    top: -45px;
+}
+
+.search__subtitle_image {
+	margin: -18px 0px 0px 18px;
+}
+
+
+.search__description {
+	margin-top: -4px;
+    margin-left: 5px;
+}
+
+.search__text {
+	width: 204px;
+	font-size: 10.5px;
+	font-weight: normal;
+	line-height: 1.95;
+	letter-spacing: -0.3px;
+	color: #878787;
+	margin: 0px 0px 0px 20px;
+    word-spacing: 3px;
+}
+
+
+.search__button {
+	width: 173px;
+	height: 35px;
+	border: solid 1.5px #c19b76;
+	background-color: transparent;
+	font-size: 8.5px;
+	font-weight: 900;
+	line-height: 2.41;
+	letter-spacing: 0.85px;
+	color: #c9a787;
+	text-align: center;
+	margin-top: 16px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+    
