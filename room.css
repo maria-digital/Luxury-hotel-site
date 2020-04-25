@@ -1,0 +1,302 @@
+
+@keyframes introMenuAnimation{
+	0%{
+		text-decoration: none;
+	}
+	100%{
+		text-decoration: underline;
+	}
+}
+.roomIntro {
+	background-image: url("images/background/background-room.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 284px;
+	background-position: bottom;
+	padding-top: 1px;
+}
+
+
+.roomIntro__menu {
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+    width: 505px;
+    position: relative;
+    top: 79%;
+    left: 230px;
+}
+
+.roomIntro__menu_item{
+	font-size: 9px;
+	font-weight: normal;
+	line-height: 2.28;
+	letter-spacing: 1.35px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.roomIntro__menu_item:hover{
+	animation: introMenuAnimation 1s 1 ease-in-out;
+	cursor: pointer;
+}
+
+.roomIntro__menu_item:focus{
+	animation: introMenuAnimation 4s 1 ease-in-out;
+	cursor: pointer;
+}
+
+.roomIntro__price {
+	display: flex;
+	justify-content: space-around;
+    width: 160px;
+    position: relative;
+    top: 66%;
+    left: 937px;
+}
+
+.roomIntro__price_300 {
+	font-family: GildaDisplay;
+	font-size: 37.5px;
+	font-weight: normal;
+	line-height: 0.55;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+
+.roomIntro__price_night {
+	font-size: 10.5px;
+	font-weight: normal;
+	line-height: 1.33;
+	letter-spacing: 1.16px;
+	color: #ffffff;
+}
+
+.room {
+	height: 930px;
+	display: flex;
+}
+
+.room__title {
+	font-family: GildaDisplay;
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 0.53;
+	letter-spacing: 1px;;
+	color: #1c1c1c;
+	padding-top: 12px;
+    margin-left: 283px;
+}
+
+.room__subtitle_hotel {
+	margin-left: 283px;
+    margin-top: -12px;
+}
+
+.room__image {
+	width: 578px;
+	height: 281px;
+	position: relative;
+	z-index: 0;
+	padding-left: 285px;
+	margin-top: 10px;
+}
+
+.room__image_review {
+	display: flex;
+	position: relative;
+	z-index: 1;
+	top: -40px;
+    left: 305px;
+}
+
+.room__image_5 {
+	font-size: 8.5px;
+	font-weight: normal;
+	line-height: 2.41;
+	letter-spacing: 1.19px;
+	color: #ffffff;
+}
+
+.room__table {
+	width: 578px;
+    text-align: center;
+    margin-left: 285px;
+    border-spacing: 20px 6px;
+}
+
+.room__ikons_user {
+	width: 29px;
+	height: 29px;
+}
+
+.room__ikons_bed {
+	width: 29px;
+	height: 29px;
+}
+
+.room__ikons_calendar {
+	width: 31px;
+	height: 31px;
+}
+
+.room__ikons_text {
+	font-size: 10.5px;
+	font-weight: normal;
+	letter-spacing: 0.63px;
+	color: #878787;
+	text-transform: uppercase;
+}
+
+.room__text {
+	font-size: 10.5px;
+	font-weight: normal;
+	line-height: 1.95;
+	letter-spacing: 0.63px;
+	color: #878787;
+	width: 576px;
+	margin-top: 52px;
+    margin-left: 285px;
+}
+
+.room__line {
+	width: 578px;
+	height: 3px;
+	background-color: #f9f9f9;
+	border: none;
+	margin-left: 264px;
+}
+
+.room__subtitle  {
+	font-family: GildaDisplay;
+	font-size: 19px;
+	font-weight: normal;
+	line-height: 0.84;
+	letter-spacing: 1px;
+	color: #1c1c1c;
+	margin-top: 69px;
+    margin-left: 287px;
+}
+
+.room__discription {
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 30px);
+    width: 576px;
+    margin-left: 285px;
+    margin-top: -6px;
+}
+
+.room__ikons_servises {
+	width: 20px;
+	height: 16px;
+}
+
+.room__description_item {
+	font-size: 10.5px;
+	font-weight: normal;
+	line-height: 2.7;
+	letter-spacing: 0.63px;
+	color: #878787;
+}
+
+.room__form {
+	width: 278px;
+	height: 280px;
+	background-color: #1c1c1c;
+	margin-top: 115px;
+    margin-left: 21px;
+}
+
+.room__form_guests {
+	width: 233px;
+	height: 54px;
+	background-color: #151515;
+	border: none;
+	font-family: GildaDisplay;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1.37;
+	letter-spacing: -0.6px;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 22px;
+    margin-left: 22px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-right: 7px;
+}
+
+.room__form_check {
+	font-size: 9px;
+	font-weight: normal;
+	line-height: 2.28;
+	letter-spacing: 0.72px;
+	color: #c19b76;
+  }
+
+  .room__form_small {
+  	width: 109px;
+  	height: 121px;
+  	background-color: #151515;
+  	padding-top: 10px;
+    text-align: center;
+}
+
+  .room__input_date {
+  	font-family: GildaDisplay;
+  	font-size: 37.5px;
+  	font-weight: normal;
+  	line-height: 0.55;
+  	letter-spacing: -2.25px;
+  	color: #c19b76;
+  	width: 39px;
+  	height: 26px;
+  	background-color: #151515;
+  	margin: 0 auto;
+  }
+
+.room__input_mouns {
+	font-family: GildaDisplay;
+	font-size: 9px;
+	font-weight: normal;
+	font-style: italic;
+	line-height: 2.28;
+	letter-spacing: -0.54px;
+	color: #ffffff;
+	padding-top: 6px;
+    margin-left: 9px;
+}
+
+.room__input_day {
+	font-size: 8.5px;
+	font-weight: normal;
+	line-height: 2.41;
+	letter-spacing: 0.68px;
+	color: #a3a3a3;
+	margin-top: -5px;
+    margin-left: 10px;
+}
+
+.room__form_container {
+	display: flex;
+	justify-content: space-around;
+	margin: 15px 22px 5px 22px;
+}
+
+.room__button {
+	width: 233px;
+	height: 32px;
+	background-color: #c19b76;
+	font-size: 8.5px;
+	font-weight: 900;
+	line-height: 2.41;
+	letter-spacing: 0.85px;
+	color: #ffffff;
+	border: none;
+	margin-left: 24px;
+}
+
+.room__button:hover{
+	cursor: pointer;
+}

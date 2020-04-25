@@ -5,7 +5,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -15,9 +15,9 @@
 				<img src="images/luxury-hotel.svg" class="header__logo">
 				<nav>
 					<ul class="container header__links">
-						<li><a href="" class="header__links_link">Hoome</a></li>
-						<li><a href="" class="header__links_link">Rooms</a></li>
-						<li><a href="" class="header__links_link">Single Room</a></li>
+						<li><a href="index.html" class="header__links_link">Hoome</a></li>
+						<li><a href="list.html" class="header__links_link">Rooms</a></li>
+						<li><a href="room.html" class="header__links_link">Single Room</a></li>
 						<li><a href="" class="header__links_link">Booking</a></li>
 						<li><a href="" class="header__links_link">Our News</a></li>
 						<li><a href="" class="header__links_link">Contact</a></li>
@@ -32,7 +32,7 @@
 				<div class="main__container">
 					<h3 class="main__subtitle">LUXURY HOTEL & BEST RESORT</h3> 
 					<h1 class="main__title">ENJOY A LUXURY EXPERIENCE</h1>
-					<button class="main__button">ROOMS & SUITES</button>
+					<button class="main__button"><a href="list.html" class="button__link">ROOMS & SUITES</a></button>
 				</div>
 				<form class="formContainer">
 					<div class="formContainer__inputs">
@@ -80,13 +80,13 @@
 							<input type="text" placeholder="1" class="formContainer__inputs_input">
 						</div>
 					</div>
-					<button class="form__button">CHECK AVAILABILITY</button>
+					<button class="form__button"><a href="list.html" class="button__link">CHECK AVAILABILITY</a></button>
 				</form>
 			</section>
 
 			<section class="about">
 				<div class="about__text">
-					<h3 class="about__subtitle">HOTEL BAYVIEW</h3>
+					<h3 class="about__subtitle about__subtitle_position">HOTEL BAYVIEW</h3>
 					<h2 class="subtitle">Pearl of the Adriatic</h2>
 					<p class="about__description">
 						Hotel Bayview is&nbsp;a&nbsp;luxurious boutique hotel located in&nbsp;the heart of&nbsp;Rovinj&rsquo;s lively Old town. Offering views of&nbsp;the harbor, St. Catherine&rsquo;s Island or&nbsp;the Main Square, each suite is&nbsp;fitted with design furniture and local art. Guests can relax at&nbsp;2&nbsp;on-site bars and a&nbsp;brasserie style restaurant.
@@ -95,13 +95,13 @@
 				</div>
 				<ul class="about__images">
 					<li>
-						<img src="images/window.png" class="about__images_window">
+						<img src="images/rooms/window.png" class="about__images_window">
 					</li>
 					<li>
-						<img src="images/bedroom.png" class="about__images_bedroom">
+						<img src="images/rooms/bedroom.png" class="about__images_bedroom">
 					</li>
 					<li>
-						<img src="images/bathroom.png" class="about__images_bathroom">
+						<img src="images/rooms/bathroom.png" class="about__images_bathroom">
 					</li>
 				</ul>
 
@@ -113,17 +113,17 @@
 				<h2 class="subtitle__rooms">Best Rooms</h2>
 				<div class="suite__container">
 					<div class="suite__container_adriatic">
-						<img src="images/adriatic-suite.png" class="suite__adriatic">
+						<img src="images/rooms/adriatic-suite.png" class="suite__adriatic">
 						<h4 class="suite__adriatic_name">Adriatic Suite</h4>
-						<h4 class="suite__subtitle">Adriatic Suite</h4>
+						<a href="room.html" class="suite__subtitle_link"><h4 class="suite__subtitle suite__subtitle_size">Adriatic Suite</h4></a>
 						
 						<table cellspacing="12" class="table">
 							<tr>
 								<td class="suite__description_7">7.5</td>
 								<td class="suite__description_reviews">5 Reviews</td>
-								<td><img src="images/user.svg" class="suite__description_user"></td>
+								<td><img src="images/icons/user.svg" class="suite__description_user"></td>
 								<td class="suite__description_reviews">3 guests</td>
-								<td><img src="images/plan.svg" class="suite__description_plan"></td>
+								<td><img src="images/icons/plan.svg" class="suite__description_plan"></td>
 								<td class="suite__description_reviews">57 m²</td>
 							</tr>
 						</table>
@@ -136,15 +136,15 @@
 					</div>
 					<div>
 						<ul class="suite__images">
-							<li> <img src="images/atelier.png" class="suite__images_image"></li>
+							<li> <img src="images/rooms/atelier.png" class="suite__images_image"></li>
 							<h4 class="suite__name">Atelier</h4>
-							<li><img src="images/piazza.jpg" class="suite__images_image suite__images_piazza"></li>
+							<li><img src="images/rooms/piazza.jpg" class="suite__images_image suite__images_piazza"></li>
 							<h4 class="suite__name">Piazza</h4>
 						</ul>
 						<ul class="suite__images">
-							<li> <img src="images/gallery.png" class="suite__images_image"></li>
+							<li> <img src="images/rooms/gallery.png" class="suite__images_image"></li>
 							<h4 class="suite__name_gallery">Gallery</h4>
-							<li><img src="images/grand-piazza-suite.png" class="suite__images_image suite__images_grand"></li>
+							<li><img src="images/rooms/grand-piazza-suite.png" class="suite__images_image suite__images_grand"></li>
 							<h4 class="suite__name_gallery">Grand Piazza Suite</h4>
 						</ul>
 					</div>
@@ -155,26 +155,27 @@
 				<div class="gallery__container">
 					<div class="gallery__container_images">
 						<ul class="gallery__images">
-							<li> <img src="images/woman.jpg" class="gallery__images_foto"></li>
-							<li><img src="images/table.jpg" class="gallery__images_foto"></li>
+							<li> <img src="images/rooms/woman.jpg" class="gallery__images_foto"></li>
+							<li><img src="images/rooms/table.jpg" class="gallery__images_foto"></li>
 						</ul>	
 						<ul class="gallery__images">
-							<li> <img src="images/balcon.jpg" class="gallery__images_foto"></li>
-							<li><img src="images/lady.jpg" class="gallery__images_foto"></li>
+							<li> <img src="images/rooms/balcon.jpg" class="gallery__images_foto"></li>
+							<li><img src="images/rooms/lady.jpg" class="gallery__images_foto"></li>
 						</ul>
 					</div>
 					<div class="gallery__container_text">
 						<h3 class="about__subtitle gallery__subtitle">LUXURY HOTEL & BEST RESORT</h3>
 						<h2 class="subtitle gallery__subtitle_white">Pearl of the </h2>
 						<h2 class="subtitle gallery__subtitle_broun">Adriatic</h2>
-						<div class="gallery__container_p">
-							<p class="gallery_text gallery_text1">
-								Decorated with original art works by&nbsp;contemporary artists, all suites are air-conditioned and consist of&nbsp;a&nbsp;SMART&nbsp;TV, mini-bar and coffee/tea making facilities.
-							</p>
-							<p class="gallery_text gallery_text2">
-								Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna&nbsp;et. Quisque euismod orci ut&nbsp;et&nbsp;lobortis. Blandit vel sapien vitae, condimentum ultricies magna et&nbsp;orci ut&nbsp;et&nbsp;lobortis, Phasellus enim
-							</p>
-						</div>
+
+						<table cellspacing="" class="gallery_text">
+							<tr>
+								<td class="gallery_text1">Decorated with original art works by&nbsp;contemporary artists, all suites are air-conditioned and consist of&nbsp;a&nbsp;SMART&nbsp;TV, mini-bar and coffee/tea making facilities.</td>
+								<td class="gallery_text2">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna&nbsp;et. Quisque euismod orci ut&nbsp;et&nbsp;lobortis. Blandit vel sapien vitae, condimentum ultricies magna et&nbsp;orci ut&nbsp;et&nbsp;lobortis, Phasellus enim</td>
+								
+							</tr>
+						</table>
+						
 						<button class="gallery__button">CHECK ALL PACKAGES</button>
 					</div>
 				</div>
@@ -197,11 +198,11 @@
 		</main>
 		<footer class="footer">
 			<ul class="footer__links">
-				<li class="footer__links_link">Home</li>
-				<li class="footer__links_link">About Us</li>
-				<li class="footer__links_link">Services</li>
-				<li class="footer__links_link">Booking</li>
-				<li class="footer__links_link">Contact</li>
+				<li><a href="index.html" class="footer__links_link">Home</a></li>
+				<li><a href="" class="footer__links_link">About Us</a></li>
+				<li><a href="" class="footer__links_link">Services</a></li>
+				<li><a href="" class="footer__links_link">Booking</a></li>
+				<li><a href="" class="footer__links_link">Contact</a></li>
 			</ul>
 		</footer>
 	</div>
