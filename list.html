@@ -14,6 +14,7 @@
 		<header class="header">
 			<div class="container">
 				<img src="images/luxury-hotel.svg" class="header__logo">
+				<img src="images/icons/menu.svg" class="header__menu">
 				<nav>
 					<ul class="container header__links">
 						<li><a href="index.html" class="header__links_link">Hoome</a></li>
@@ -33,14 +34,15 @@
 			</section>
 
 			<section class="search">
-			<div>
+			<div class="container__list">
 					<div class="search__container">
 					<h5 class="search__subtitle">All Branches</h5>
-					<div>
+					<div class="container__action">
+						<div class="container__action_1">
 						<ul class="container__check">
 							<li>
 								<div class="search__check">
-									<span class="check__title">CHECK-IN</span>
+									<span class="check__title check__title_in">CHECK-IN</span>
 									<br>
 									<div class="container__input">
 										<input type="text" placeholder="26" class= "formContainer__inputs_input search__input">
@@ -64,7 +66,7 @@
 							</li>
 							<li>
 								<div class="search__check">	
-									<span class="check__title">CHECK-OUT</span>
+									<span class="check__title check__title_1">CHECK-OUT</span>
 									<br>
 									<div class="container__input">
 									<input type="text" placeholder="28" class= "formContainer__inputs_input search__input">
@@ -86,6 +88,8 @@
 								</div>
 							</li>
 						</ul>
+						</div>
+						<div class="container__action_2">
 						<ul class="container__check">
 							<li>
 								<div class="search__check search__guests">
@@ -102,6 +106,7 @@
 								</div>
 							</li>
 						</ul>
+						</div>
 					</div>
 				</div>
 				<hr class="search__line">
@@ -135,7 +140,7 @@
 					</li>
 				</ul>
 				<hr class="search__line">
-				<div class="servises__title">Room Size</div>
+				<div class="servises__title servises__title_room">Room Size</div>
 				<ul class="search__roomsize">
 					<li><div class="search__size">0.0</div></li>
 					<li>-</li>
@@ -144,7 +149,7 @@
 
 				</ul>
 				<hr class="search__line">
-				<div class="servises__title">Reviews</div>
+				<div class="servises__title servises__title_reviews">Reviews</div>
 				<ul class="search__reviews">
 					<li><div class="search__rating">0.0</div></li>
 					<li><div class="search__rating">2.0</div></li>
@@ -154,13 +159,15 @@
 					<li><div class="search__rating">10</div></li>
 				</ul>
 			</div>
-			<div>
-				<div class="container__images">
+			<span class="list">List</span>
+			<div class="container__list_images">
+				<a href="room.html"><div class="container__images">
 					<div class="search__container_image">
 						<img src="images/rooms/adriatic-suite.png" class="search__image">
 						<h4 class="suite__name search__suitename">Adriatic Suite</h4>
+						<div class="container__in">
 						<a href="room.html" class="button__link"><h4 class="suite__subtitle search__subtitle_image">Adriatic Suite</h4></a>
-						<table cellspacing="12" class="search__description">
+						<table cellspacing="7" class="search__description">
 							<tr>
 								<td class="suite__description_7">7.5</td>
 								<td class="suite__description_reviews">2 Reviews</td>
@@ -175,13 +182,16 @@
 							Main Square and the lively waterfront.
 						</p>
 						<button class="search__button">BOOK NOW for 300$</button>
+						</div>
 					</div>
+					</a>
 
-					<div class="search__container_image">
-						<img src="images/rooms/atelier.png" class="search__image">
-						<h4 class="suite__name search__suitename">Atelier</h4>
+					<div class="search__container_image search__container_1">
+						<img src="images/rooms/atelier.png" class="search__image search__image_gallery">
+						<h4 class="suite__name search__suitename search__suitename_atelier">Atelier</h4>
+						<div class="container__in">
 						<h4 class="suite__subtitle search__subtitle_image">Atelier</h4>
-						<table cellspacing="12" class="search__description">
+						<table cellspacing="7" class="search__description">
 							<tr>
 								<td class="suite__description_7">8.0</td>
 								<td class="suite__description_reviews">5 Reviews</td>
@@ -196,15 +206,17 @@
 							are a&nbsp;part of&nbsp;the old town&rsquo;s center.
 						</p>
 						<button class="search__button">BOOK NOW for 132$</button>
+						</div>
 					</div>
 				</div>
 
-				<div class="container__images">
+				<div class="container__images container__images_1024">
 					<div class="search__container_image">
 						<img src="images/rooms/gallery.png" class="search__image">
-						<h4 class="suite__name search__suitename">Gallery</h4>
-						<h4 class="suite__subtitle search__subtitle_image">Gallery</h4>
-						<table cellspacing="12" class="search__description">
+						<h4 class="suite__name search__suitename search__suitename_gallery">Gallery</h4>
+						<div class="container__in">
+						<h4 class="suite__subtitle search__subtitle_image search__subtitle_gallery">Gallery</h4>
+						<table cellspacing="7" class="search__description">
 							<tr>
 								<td class="suite__description_7">9.5</td>
 								<td class="suite__description_reviews">4 Reviews</td>
@@ -214,18 +226,20 @@
 								<td class="suite__description_reviews">37 m²</td>
 							</tr>
 						</table>
-						<p class="search__text">
+						<p class="search__text search__text_gallery">
 							Set at&nbsp;the very top floor of&nbsp;the hotel, 
 							this suite is&nbsp;air-conditioned.
 						</p>
-						<button class="search__button">BOOK NOW for 435$</button>
+						<button class="search__button search__button_gallery">BOOK NOW for 435$</button>
+						</div>
 					</div>
 
-					<div class="search__container_image">
-						<img src="images/rooms/grand-piazza-suite.png" class="search__image">
-						<h4 class=" suite__name search__suitename">Grand Piazza Suite</h4>
-						<h4 class="suite__subtitle search__subtitle_image">Grand Piazza Suite</h4>
-						<table cellspacing="12" class="search__description">
+					<div class="search__container_image search__container_1">
+						<img src="images/rooms/grand-piazza-suite.png" class="search__image search__image_gallery">
+						<h4 class=" suite__name search__suitename search__suitename_grand">Grand Piazza Suite</h4>
+						<div class="container__grand">
+						<h4 class="suite__subtitle search__subtitle_image search__subtitle_grand">Grand Piazza Suite</h4>
+						<table cellspacing="7" class="search__description">
 							<tr>
 								<td class="suite__description_7">9.8</td>
 								<td class="suite__description_reviews">7 Reviews</td>
@@ -235,11 +249,12 @@
 								<td class="suite__description_reviews">78 m²</td>
 							</tr>
 						</table>
-						<p class="search__text">
+						<p class="search__text search__text_grand">
 							Offering views of&nbsp;Rovinj&rsquo;s Main Square, 
 							this spacious suite is&nbsp;air-conditioned.
 						</p>
 						<button class="search__button">BOOK NOW for 610$</button>
+						</div>
 					</div>
 				</div>
 
@@ -248,6 +263,13 @@
 
 		</main>
 		<footer class="footer">
+			<ul class="footer__links">
+				<li><a href="index.html" class="footer__links_link">Home</a></li>
+				<li><a href="" class="footer__links_link">About Us</a></li>
+				<li><a href="" class="footer__links_link">Services</a></li>
+				<li><a href="" class="footer__links_link">Booking</a></li>
+				<li><a href="" class="footer__links_link">Contact</a></li>
+			</ul>
 		</footer>
 	</div>
 </body>

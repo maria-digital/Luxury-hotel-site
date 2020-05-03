@@ -7,6 +7,11 @@
 		text-decoration: underline;
 	}
 }
+
+.header__menu {
+	display: none;
+}
+
 .roomIntro {
 	background-image: url("images/background/background-room.jpg");
 	background-size: cover;
@@ -24,7 +29,7 @@
     width: 505px;
     position: relative;
     top: 79%;
-    left: 230px;
+    left: 462px;;
 }
 
 .roomIntro__menu_item{
@@ -49,10 +54,10 @@
 .roomIntro__price {
 	display: flex;
 	justify-content: space-around;
-    width: 160px;
+    width: 158px;
     position: relative;
     top: 66%;
-    left: 937px;
+    left: 1170px;
 }
 
 .roomIntro__price_300 {
@@ -75,6 +80,7 @@
 .room {
 	height: 930px;
 	display: flex;
+	margin-left: 232px;
 }
 
 .room__title {
@@ -120,9 +126,13 @@
 
 .room__table {
 	width: 578px;
-    text-align: center;
-    margin-left: 285px;
-    border-spacing: 20px 6px;
+   	margin-left: 228px;
+    padding-left: 56px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 41px);
+    text-align: -webkit-center;
 }
 
 .room__ikons_user {
@@ -155,12 +165,12 @@
 	letter-spacing: 0.63px;
 	color: #878787;
 	width: 576px;
-	margin-top: 52px;
+	margin-top: -11px;
     margin-left: 285px;
 }
 
 .room__line {
-	width: 578px;
+	width: 68%;
 	height: 3px;
 	background-color: #f9f9f9;
 	border: none;
@@ -209,7 +219,7 @@
 }
 
 .room__form_guests {
-	width: 233px;
+	width: 83%;
 	height: 54px;
 	background-color: #151515;
 	border: none;
@@ -236,7 +246,7 @@
   }
 
   .room__form_small {
-  	width: 109px;
+  	width: 45%;
   	height: 121px;
   	background-color: #151515;
   	padding-top: 10px;
@@ -285,7 +295,7 @@
 }
 
 .room__button {
-	width: 233px;
+	width: 82%;
 	height: 32px;
 	background-color: #c19b76;
 	font-size: 8.5px;
@@ -300,3 +310,390 @@
 .room__button:hover{
 	cursor: pointer;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+	.roomIntro {
+		height: 157px;
+	}
+
+	.roomIntro__menu {
+		top: 69%;
+    	left: 155px;
+    	width: 430px;
+	}
+
+	.roomIntro__menu_item {
+		font-size: 9px;
+    	line-height: 1.61;
+	}
+
+	.roomIntro__price {
+		top: 47%;
+    	left: 652px;
+    	width: 135px;
+	}
+
+	.roomIntro__price_300 {
+		font-size: 27px;
+		line-height: 0.54;
+	}
+
+	.roomIntro__price_night {
+		font-size: 9px;
+		line-height: 1.11;
+		margin-left: -14px;
+    	margin-top: 4px;
+	}
+
+	.room {
+		margin-left: -85px;
+    	margin-top: -12px;
+    	height: 694px;
+	}
+	
+	.room__title {
+		font-size: 21.5px;
+		line-height: 0.53;
+		margin-top: 25px;
+    	letter-spacing: 0.9px;
+    	margin-left: 282px;
+	}
+
+	.room__subtitle_hotel {
+		font-size: 9px;
+		line-height: 1.61;
+		margin-left: 284px;
+    	letter-spacing: 0.8px;
+	}
+
+	.room__image {
+		width: 412px;
+		height: 200px;
+	}
+
+	.room__image_review {
+		margin-top: 6px;
+    	margin-left: -6px;
+	}
+
+	.room__image_5 {
+		font-size: 9px;
+    	line-height: 1.61;
+    	letter-spacing: 1.26px;
+	}
+
+	.room__table {
+		width: 410px;
+    	margin-left: 229px;
+    	margin-top: -6px;
+    	grid-template-rows: repeat(3, 27px);
+	}
+
+	.room__ikons_user {
+		width: 21px;
+		height: 21px;
+	}
+
+	.room__ikons_bed {
+		width: 21px;
+		height: 20px;
+	}
+
+	.room__ikons_calendar {
+		width: 22px;
+		height: 22px;
+	}
+
+	.room__ikons_text {
+		font-size: 9px;
+		line-height: 1.61;
+		letter-spacing: 0.54px;
+	}
+
+	.room__text {
+		font-size: 9px;
+		line-height: 2;
+		letter-spacing: 1px;
+		width: 404px;
+    	height: 93px;
+    	margin-top: -6px;
+    	margin-left: 283px;
+	}
+
+	.room__subtitle {
+		font-size: 14px;
+    	line-height: 0.82;
+		letter-spacing: 0.8px;
+    	margin-left: 284px;
+	}
+
+	.room__discription {
+		width: 411px;
+		grid-template-rows: repeat(3, 26px);
+	}
+
+	.room__ikons_servises {
+		width: 14px;
+		height: 12px;
+	}
+
+	.room__description_item {
+		font-size: 9px;
+   		line-height: 1.61;
+		letter-spacing: 0.54px;
+	}
+
+	.room__form {
+		width: 198px;
+		height: 200px;
+		margin-top: 87px;
+    	margin-left: 10px;
+	}
+
+	.room__form_guests {
+		width: 166px;
+		height: 38px;
+		font-size: 11px;
+   		line-height: 1.32;
+		letter-spacing: -0.44px;
+		margin-top: 17px;
+    	margin-left: 19px;
+    	padding-top: 13px;
+	}
+
+	.room__form_small {
+		width: 72px;
+		height: 85px;
+		margin-top: -8px;
+    	margin-left: -7px;
+	}
+
+	.room__form_check {
+		font-size: 8px;
+  		line-height: 1.81;
+		letter-spacing: 0.64px;
+	}
+
+	.room__input_date {
+		font-size: 27px;
+		line-height: 0.54;
+		letter-spacing: -1.62px;
+		margin-top: 0px;
+    	margin-left: 4px;
+	}
+
+	.room__input_mouns {
+		font-size: 8px;
+		line-height: 1.81;
+		letter-spacing: -0.48px;
+		margin-left: -8px;
+	}
+
+	.room__input_day {
+		font-size: 8px;
+		line-height: 1.81;
+		letter-spacing: 0.64px;
+	}
+
+	.room__button {
+		width: 165px;
+		height: 25px;
+		font-size: 9px;
+		font-weight: 900;
+		line-height: 1.61;
+		letter-spacing: 0.9px;
+		margin-left: 18px;
+	}
+
+	.footer__links {
+		width: 405px;
+    	padding: 14px 0px 0px 194px;
+	}
+
+	.footer__links_link {
+		letter-spacing: 1px;
+	}
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+
+	.header__menu {
+		display: block;
+	}
+
+	.roomIntro { 
+		height: 205px;
+	}
+
+	.roomIntro__menu {
+		display: none;
+	}
+
+	.roomIntro__price {
+		display: none;
+	}
+
+	.room {
+		height: 1320px;
+	}
+
+	.room__title {
+		font-size: 48px;
+		line-height: 0.63;
+		letter-spacing: 0.8px;
+		color: #ffffff;
+		top: -178px;
+    	position: relative;
+    	left: -388px;
+    	text-transform: uppercase;
+    	width: 600px;
+	}
+
+	.room__subtitle_hotel {
+		display: none;
+	}
+
+	.room__image {
+		margin-top: 325px;
+    	margin-left: -464px;
+		width: 523px;
+		height: 227px;
+	}
+
+	.room__image_review {
+		left: -153px;
+		top: -32px;
+	}
+	
+	.room__table {
+    	width: 526px;
+    	margin-left: -229px;
+    	grid-template-rows: repeat(3, 55px);
+    	margin-top: 0px;
+	}
+
+	.room__ikons_user {
+		width: 43px;
+		height: 43px;
+	}
+
+	.room__ikons_bed {
+		width: 42px;
+		height: 23px;
+	}
+
+	.room__ikons_calendar {
+		width: 39px;
+		height: 40px;
+	}
+
+	.room__ikons_text {
+		font-size: 16px;
+		line-height: 0.91;
+		letter-spacing: 0.96px;
+		white-space: nowrap;
+	}
+
+	.room__text {
+  		font-size: 18px;
+  		line-height: 1.56;
+		letter-spacing: 1.5px;
+		margin-left: -182px;
+		margin-top: -63px;
+		width: 559px;
+	}
+
+	.room__subtitle {
+		font-size: 22px;
+		line-height: 0.52;
+		letter-spacing: 1.4px;
+    	margin-left: -179px;
+    	margin-top: 17px;
+	}
+
+	.room__discription {
+		width: 548px;
+    	margin-left: -182px;
+    	margin-top: 0px;
+    	grid-template-rows: repeat(3, 38px)
+	}
+
+	.room__description_item {
+		font-size: 16px;
+		line-height: 0.91;
+		letter-spacing: 0.96px;
+	}
+
+	.room__ikons_servises {
+		width: 26px;
+ 		height: 19px;
+	}
+
+	.room__form {
+		width: 522px;
+    	height: 359px;
+    	margin-top: 37px;
+    	margin-left: -1058px;
+	}
+
+	.room__form_guests {
+		margin-left: 34px;
+		font-size: 16px;
+		line-height: 0.56;
+		letter-spacing: 2.6px;
+		width: 460px;
+		height: 58px;
+		padding-top: 28px;
+    	padding-left: 2px;
+	}
+
+	.room__form_container {
+		margin: 15px 73px 11px 65px;
+	}
+
+	.room__form_small {
+    	width: 127px;
+    	height: 143px;
+    	margin-top: 12px;
+	}
+
+	.room__form_check {
+		font-size: 14px;
+		line-height: 0.64;
+		letter-spacing: 1.12px;
+		margin-top: 10px;
+		margin-bottom: 7px;
+	}
+
+	.room__input_date {
+		font-size: 36px;
+		line-height: 0.25;
+		letter-spacing: -2.16px;
+	}
+
+	.room__input_mouns {
+		font-size: 14px;
+		line-height: 0.64;
+		letter-spacing: -0.84px;
+	}
+
+	.room__input_day {
+		font-size: 14px;
+		font-weight: 300;
+ 		line-height: 0.64;
+		letter-spacing: -0.84px;
+		margin-top: 14px;
+	}
+
+	.room__button {
+		width: 461px;
+		height: 54px;
+    	font-size: 22px;
+  		line-height: 0.39;
+		letter-spacing: -0.5px;
+		margin-left: 30px;
+	}
+	    
+}
+

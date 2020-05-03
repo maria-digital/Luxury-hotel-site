@@ -10,8 +10,13 @@
 	}
 }
 
+
+@media screen and (min-width: 1440px) {
 .wrapper {
-	max-width: 1440px;
+	min-width: 1440px;}}
+
+.wrapper {
+	min-width: 640px;
 	margin: 0 auto;
 	font-family: 'Roboto', sans-serif;
 }
@@ -31,14 +36,18 @@
 .header__logo {
 	width: 170px;
 	height: 20px;
-	margin: 15px 10px 15px 107px;
+	margin: 15px 10px 15px 340px;
 	padding-left: 174px;
+}
+
+.header__menu {
+	display: none;
 }
 
 .header__links {
 	list-style: none;
 	width: 450px;
-	margin: 10px 188px 0px 0px;
+	margin: 12px 508px 0px 0px;
 	padding: 0px 5px 0px 0px;
 }
 
@@ -49,6 +58,7 @@
 	font-weight: normal;
 	line-height: 1.95;
 	letter-spacing: 1.89px;
+	word-spacing: -9px;
 }
 
 .header__links_link:hover{
@@ -61,7 +71,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	height: 575px;
+	height: 577px;
 	top: -390px;
 	padding: 0px 0px 380px 0px;
 }
@@ -76,7 +86,7 @@
 	font-weight: normal;
 	line-height: 2.28;
 	letter-spacing: 1.1px;
-    padding: 453px 0px 15px 90px;
+	padding: 453px 0px 15px 0px;
 }
 
 .main__title {
@@ -88,7 +98,7 @@
 	letter-spacing: 1.6px;
 	max-width: 470px;
 	margin: 0 auto;
-	padding: 0px 0px 0px 90px;
+	padding-top: 2px;
 }
 
 .main__button {
@@ -101,7 +111,7 @@
 	font-weight: 900;
 	line-height: 2.41;
 	letter-spacing: 0.85px;
-	margin: 35px -90px 95px 0px;
+	margin: 35px 0px 92px 0px;
 }
 
 .main__button:hover{
@@ -115,7 +125,9 @@
 
 .formContainer {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	width: 449px;
+    margin-left: 683px;
 }
 
 .formContainer__inputs {
@@ -129,12 +141,13 @@
 	line-height: 2.28;
 	letter-spacing: 0.72px;
 	color: #a3a3a3;
-	margin: 0px -900px 0px 0px;
+	margin: 0px -448px 0px 0px;
 }
 
 .form__checkin {
 	margin: 15px -60px 0px 55px;
 }
+
 
 .formContainer__inputs_input {
 	width: 56px;
@@ -185,7 +198,7 @@
 .about{
 	display: flex;
 	height: 500px;
-	margin: -390px 0px -60px 0px;
+	margin: -391px 0px -60px 232px;
 }
 
 .about__text {
@@ -214,7 +227,7 @@
 	height: 107px;
 	width: 303px;
 	margin: 15px -110px 0px 17px;
-    letter-spacing: 2.2px;
+	letter-spacing: 2.2px;
 }
 
 .about__description {
@@ -264,7 +277,8 @@
 	height: 218px;
 	position: relative;
 	z-index: 1;
-	left: -300px;
+	left: -303px;
+    top: 7px;
 }
 
 .about__images_bathroom {
@@ -278,12 +292,12 @@
 
 .suite {
 	background-color: #f9f9f9;
-	height: 624px;
+	height: 624px;  
 }
 
 .suite__hotel {
 	text-align: center;
-	margin: 60px -93px 0px 0px;
+	margin: 59px -3px 0px 0px;
 	padding: 58px 0px 0px 0px;
 }
 
@@ -291,7 +305,7 @@
 	color: #878787;
 	width: 23px;
 	size: 2px;
-	margin: 5px 0px 0px 705px;
+	margin: 3px 0px 0px 939px;
 }
 
 .subtitle__rooms {
@@ -301,20 +315,23 @@
 	line-height: 1.46;
 	text-align: center;
 	color: #1c1c1c;
-	margin: 0px -87px 0px 0px;
-    letter-spacing: 1px;
+	margin: 3px 2px 0px 0px;
+    letter-spacing: 0.9px;
 }
+
 
 .suite__container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+    width: 860px;
+    margin-left: 251px;
 }
 
 .suite__container_adriatic {
 	width: 428px;
 	height: 392px;
 	background-color: #ffffff;
-	margin: 30px -54px 0px 263px;
+	margin: 30px -18px 0px 263px;
 }
 
 .suite__adriatic {
@@ -341,7 +358,7 @@
 	font-weight: normal;
 	line-height: 0.7;
 	color: #1c1c1c;
-    letter-spacing: 1px;
+	letter-spacing: 1px;
 }
 
 .suite__subtitle_link {
@@ -370,6 +387,7 @@
 	text-align: center;
 }
 
+
 .suite__description_reviews {
 	font-size: 9px;
 	font-weight: normal;
@@ -383,9 +401,12 @@
 	height: 17px;	
 }
 
+
 .suite__description_plan {
 	width: 16px;
 	height: 16px;
+	margin-top: 2px;
+    margin-left: -3px;
 }
 
 .suite__text {
@@ -408,7 +429,8 @@
 	letter-spacing: 0.85px;
 	color: #ffffff;
 	border: none;
-	margin: 20px 0px 0px 23px;
+	margin: 17px 0px 0px 23px;
+    padding-left: 16px;
 }
 
 .suite__button:hover{
@@ -453,7 +475,7 @@
 .suite__name_gallery{
 	position: relative;
 	z-index: 1;
-	right: 185px;
+	right: 164px;
 	top: 135px;
 	font-size: 8.5px;
 	font-weight: normal;
@@ -465,7 +487,9 @@
 }
 
 .suite__images_grand{
-	margin-left: -25px;
+	margin-left: -1px;
+    margin-right: -21px;
+    margin-top: -7px;
 }
 
 .gallery {
@@ -476,6 +500,9 @@
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
+	width: 1440px;
+    margin: 0 auto;
+    background-color: #1c1c1c;
 }
 
 .gallery__container_images{
@@ -487,7 +514,6 @@
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	width: 720px;
 	height: 240px;
 	margin: 0px 0 0 -40px;
 }
@@ -507,7 +533,7 @@
 	color: #ffffff;
 	text-align: center;
 	letter-spacing: 0.1px;
-    margin: 66px 313px 0px 0px;
+	margin: 66px 313px 0px 0px;
 }
 
 .gallery__subtitle_white {
@@ -533,7 +559,7 @@
 	letter-spacing: 0.2px;
 	color: #878787;
 	text-align: left;
-    margin: -30px 0px 0px 70px;
+	margin: -30px 0px 0px 70px;
 }
 
 .gallery_text1 {
@@ -543,6 +569,10 @@
 .gallery_text2 {
 	width: 240px;
 	padding: 10px 0px 0px 50px;
+}
+
+.gallery_text_mobile {
+	display: none;
 }
 
 .gallery__button {
@@ -555,7 +585,7 @@
 	letter-spacing: 0.85px;
 	color: #ffffff;
 	border: none;
-	margin: 32px 320px 0px 0px;
+	margin: 32px 400px 0px 0px;
 }
 
 .gallery__button:hover{
@@ -566,8 +596,9 @@
 	height: 175px;
 }
 
+
 .pluses__container {
-	padding: 48px 0px 0px 88px;
+	padding-top: 48px;
 }
 
 .pluses__text {
@@ -591,9 +622,9 @@
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-    width: 340px;
-    text-align: center;
-    padding: 23px 0px 0px 280px;
+	width: 340px;
+	text-align: center;
+	padding: 23px 0px 0px 513px;
 }
 
 .footer__links_link {
@@ -601,9 +632,836 @@
 	font-size: 9.5px;
 	font-weight: normal;
 	line-height: 2.15;
-	letter-spacing: 2.31px;
+	letter-spacing: 2px;
 	color: #ffffff;
 	text-decoration: none;
 }
 
 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	.wrapper {
+		max-width: 1024px;
+	}
+
+	.header {
+		height: 36px;
+	}
+
+	.header__logo {
+		height: 14px;
+		width: 119px;
+		margin-top: 10px;
+		margin-left: 27px;
+	}
+
+	.header__links {
+		width: 435px;
+		margin: 6px 19px 0px 0px;
+		word-spacing: 10px;
+	}
+
+	.header__links_link {
+		font-size: 11px;
+		line-height: 1.32;
+		letter-spacing: -0.11px;
+	}
+
+	.main {
+		height: 270px;
+	}
+
+	.main__subtitle {
+		font-size: 10px;
+		line-height: 1.45;
+		letter-spacing: 1.2px;
+		margin-top: -1px;
+	}
+
+	.main__title {
+		font-size: 32px;
+		line-height: 1;
+		letter-spacing: 0.9px;
+		margin-left: 264px;
+		white-space: nowrap;
+    	padding-top: 0px;
+	}
+
+	.main__button {
+		width: 145px;
+		height: 25px;
+		border: solid 1.1px #ffffff;
+		font-size: 9px;
+		line-height: 1.61;
+		letter-spacing: 0.9px;
+		margin-top: 29px;
+   		margin-right: 0px;
+	}
+
+	.formContainer {
+ 		width: 397px;
+    	margin-left: 250px;
+    	justify-content: space-between;
+	}
+
+	.formContainer__inputs{
+		margin-top: -19px;
+    	margin-left: 25px;
+    	width: 354px;
+    	text-align: center;
+	}  
+
+	.form__checkin {
+		display: grid;
+	}
+
+	.form__checkout {
+		display: grid;
+		margin-left: 11px;
+	}
+
+	.br {
+		display: none;
+	}
+	
+	.formContainer__inputs_input {
+		width: 59px;
+    	height: 41px;
+		font-size: 26.5px;
+		letter-spacing: -1.59px;
+		border: solid 0.5px #a3a3a3;
+		text-align: center;
+	}
+
+	.formContainer__select{
+ 		padding-left: 24px;
+	}
+
+	.form__guests {
+		margin: 15px 61px 0px 0px;
+	}
+
+	.form__button {
+		width: 92px;
+		height: 83px;
+		margin-top: -7px;
+		margin-right: -64px;
+	}
+
+	.about{
+		height: 475px;
+		margin-left: 0px;
+	}
+
+	.about__subtitle {
+		font-size: 9px;
+		line-height: 1.61;
+		letter-spacing: 0.99px;
+	}
+
+	.about__subtitle_position {
+		letter-spacing: 0.7px;
+    	margin-top: 62px;
+    	margin-left: -50px;
+	}
+
+	.subtitle {
+		font-size: 43px;
+		letter-spacing: 1.7px;
+    	margin-left: -124px;
+    	margin-top: 11px;
+	}
+
+	.about__description {
+		font-size: 9px;
+		line-height: 1.78;
+		letter-spacing: 0.2px;
+    	margin-top: -8px;
+    	margin-left: -105px;
+    	width: 252px;
+    	height: 73px;
+	}
+
+	.about__button {
+		width: 115px;
+		height: 25px;
+		font-size: 9px;
+		line-height: 1.61;
+		letter-spacing: 0.9px;
+		margin-top: 23px;
+    	margin-left: -98px;
+	}
+
+	.about__images {
+		margin: 77px 0px 0px -15px;
+	}
+
+	.about__images_window {
+		width: 245px;
+		height: 164px;
+		bottom: -179px;
+	}
+
+	.about__images_bedroom {
+		width: 232px;
+		height: 155px;
+		left: -218px;
+    	top: 58px;
+	}
+
+	.about__images_bathroom {
+		width: 179px;
+		height: 242px;
+		left: -250px;
+    	top: 76px;
+	}
+
+	.suite {
+		height: 460px;
+	}
+
+	.suite__hotel {
+		letter-spacing: 0.7px;
+		margin: 36px 5px 0px 0px;
+	}
+
+	.suite__line {
+		width: 17px;
+		size: 1px;
+		margin: 4px 0px 0px 503px;
+	}
+
+	.subtitle__rooms {
+		font-size: 30px;
+		line-height: 1.43;
+		letter-spacing: normal;
+		margin: 1px 2px 0px 0px;
+		letter-spacing: 0.8px;
+	}
+
+	.suite__container {
+		width: 620px;
+    	margin-left: -111px;
+	}
+
+	.suite__container_adriatic {
+		width: 305px;
+		height: 279px;
+		margin: 30px -24px 0px 311px;
+	}
+
+	.suite__adriatic {
+		width: 305px;
+		height: 132px;
+		margin-top: -9px;
+	}
+
+	.suite__adriatic_name {
+		font-size: 9px;
+		line-height: 1.61;
+		letter-spacing: 0.9px;
+		top: -38px;
+    	right: -18px;
+	}
+
+	.suite__subtitle {
+		font-size: 16px;
+		letter-spacing: normal;
+	}
+
+	.suite__subtitle_size{
+    	letter-spacing: 0.5px;
+    	margin: -23px 150px 0px -25px;
+	}
+
+	.suite__description_7  {
+		width: 22px;
+		height: 15px;
+		font-size: 8px;
+		line-height: 1.81;
+		letter-spacing: -0.16px;
+	}
+
+	.suite__description_reviews  {
+		font-size: 7px;
+		line-height: 2.07;
+	}
+
+	.suite__description_user {
+		width: 12px;
+		height: 12px;
+		margin-top: 3px;
+    	margin-left: -10px;	
+	}
+
+	.suite__description_plan {
+		width: 11px;
+		height: 11px;	
+		margin-top: 4px;
+    	margin-left: -4px;
+	}
+
+	.suite__text {
+		font-size: 9px;
+		line-height: 2;
+		letter-spacing: 0.4px;
+    	width: 267px;
+    	margin-top: -10px;
+    	margin-left: 18px;
+	}
+
+	.suite__button {
+		width: 186px;
+		height: 26px;
+		font-size: 9px;
+		line-height: 1.61;
+		letter-spacing: 0.9px;
+		margin: 9px 0px 0px 17px;
+	}
+
+	.suite__images {
+		width: 300px;
+    	margin-right: 314px;
+    	padding-top: 2px;
+	}
+
+	.suite__images_image {
+		width: 146px;
+		height: 132px;
+	}
+
+	.suite__images_piazza {
+		margin-left: -30px;
+	}
+
+	.suite__images_grand {
+    	margin-left: -4px;
+    	margin-right: -26px;
+	}
+
+	.suite__name {
+ 		right: 130px;
+    	top: 100px;
+	}
+
+	.suite__name_gallery {
+    	right: 101px;
+    	top: 94px;
+    }
+
+    .gallery {
+		height: 344px;
+	}
+
+	.gallery__container {
+		width: 1024px;
+	}
+
+	.suite__name, .suite__name_gallery {
+		font-size: 9px;
+		line-height: 1.61;
+		letter-spacing: 0.9px;
+	}
+
+	.gallery__container_images {
+		width: 514px;
+		height: 344px;
+		display: flex;
+    	flex-direction: column;
+	}
+
+	.gallery__images_mobile {
+		margin-top: -4px;
+	}
+
+
+	.gallery__images_foto {
+		width: 257px;
+		height: 172px;
+	}
+
+	.gallery__container_text {
+		width: 514px;
+		height: 344px;
+	}
+
+	.gallery__subtitle {
+		letter-spacing: 1.1px;
+		margin: 49px 232px 0px 0px;
+	}
+
+	.gallery__subtitle_white {
+		margin-left: 11px;
+    	margin-top: 3px;
+	}
+
+	.gallery__subtitle_broun {
+		margin-left: -24px;
+    	margin-top: -65px;
+	}
+
+	.gallery_text {
+		font-size: 9px;
+		line-height: 2;
+		letter-spacing: 0.54px;
+		margin-top: -59px;
+    	margin-left: 51px;
+	}
+
+	.gallery_text1 {
+    	width: 161px;
+	}
+
+	.gallery_text_mobile {
+	display: none;
+	}
+
+	.gallery__button {
+		width: 158px;
+		height: 25px;
+		font-size: 9px;
+		line-height: 1.61;
+		letter-spacing: 0.9px;
+	}
+
+	.gallery_text2 {
+    	width: 170px;
+    	padding: 14px 0px 0px 46px;
+	}
+
+	.gallery__button {
+		margin: 0px 227px 0px 0px;
+	}
+
+	.pluses {
+		height: 154px;
+	}
+
+	.pluses__container {
+    	padding: 54px 0px 0px 0px;
+	}
+
+	.pluses__text {
+		width: 360px;
+		font-size: 13.5px;
+		letter-spacing: 0.5px;
+	}
+
+	.footer {
+		height: 48px;
+	}
+
+	.footer__links {
+		width: 350px;
+		padding: 14px 0px 0px 201px;
+	}
+
+	.footer__links_link {
+		font-size: 13px;
+		line-height: 1.32;
+		letter-spacing: 0.33px;
+	}
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+
+	.wrapper {
+		max-width: 640px;
+	}
+
+	.header {
+		height: 34px;
+	}
+
+	.header__logo {
+		width: 171px;
+    	height: 19px;
+    	margin: 10px 17px 15px -128px;
+	}
+
+	.header__links, .main__subtitle, .suite__subtitle, .table, .suite__text,.suite__button, .suite__images_grand, .suite__name_piazza, .suite__name_grand {
+		display: none;
+	}
+
+	.header__menu {
+		display: block;
+		width: 24px;
+		height: 20px;
+    	margin-top: 10px;
+    	margin-left: 267px;
+	}
+
+	.main {
+		height: 211px;
+	}
+
+	.main__container {
+    	margin-bottom: 29px;
+	}
+
+	.main__title {
+		font-size: 32px;
+		line-height: 1.41;
+		padding-top: 410px;
+    	letter-spacing: 1px;
+    	margin-left: 84px;
+	}
+
+	.main__button {
+		width: 240px;
+		height: 52px;
+		font-size: 18px;
+		font-weight: 900;
+		line-height: 0.5;
+		letter-spacing: 1.8px;
+		margin-top: 15px;
+    	margin-left: 1px;
+	}
+
+	.formContainer {
+		margin-left: 29px;
+		display: block;
+		margin-top: -55px;
+		border: solid 1px #a3a3a3;
+		width: 526px;
+		margin: 0 auto;
+    	margin-top: -46px;
+	}
+
+	.formContainer__inputs {
+		width: 526px;
+		height: 141px;
+		text-align: center;
+		padding-top: 4px;
+    	box-sizing: border-box;
+	}
+
+	.formContainer__inputs_input {
+	   margin-left: 34px;
+	}
+
+	.form__checkin {
+		width: 175px;
+		height: 141px;
+		margin-left: 0px;
+		display: grid;
+    	justify-content: center;
+    	margin-top: -4px;
+	}
+
+	.form__name {
+		margin-top: 26px;
+		margin-bottom: -33px;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 0.64;
+		letter-spacing: 1.12px;
+	}
+
+	.formContainer__select {
+		font-size: 20px;
+		font-weight: normal;
+		line-height: 0.45;
+		letter-spacing: -1.2px;
+		padding-left: 29px;
+	}
+
+	.form__checkout {
+		width: 175px;
+		height: 141px;
+		display: grid;
+    	justify-content: center;
+    	margin-top: -4px;
+    	margin-left: 14px;
+	}
+
+	.form__guests {
+		width: 175px;
+		height: 141px;
+		margin-right: 1px;
+		margin-top: -4px;
+		box-sizing: border-box;
+    	padding-top: 21px;
+	}
+
+	.form__button {
+		width: 526px;
+		height: 76px;
+		font-size: 22px;
+		line-height: 0.39;
+		letter-spacing: 3.2px;
+	}
+
+	.about {
+		height: 877px;
+		margin: -189px 0px -60px -200px;
+		display: block;
+	}
+
+	.about__subtitle_position, .suite__hotel {
+		font-size: 18px;
+		line-height: 0.5;
+		letter-spacing: 1.98px;
+	}
+
+	.about__subtitle_position {
+	    letter-spacing: 1.5px;
+	    padding-top: 45px;
+        margin-left: -104px;
+	}
+    
+
+	.subtitle, .subtitle__rooms {
+		font-size: 36px;
+		line-height: 0.75;
+		letter-spacing: normal;
+	}
+
+	.subtitle { 
+		letter-spacing: 1.7px;
+    	white-space: nowrap;
+    	margin-top: 35px;
+	}
+
+	.about__description {
+		width: 415px;
+		height: 274px;
+		font-size: 22px;
+		line-height: 1.64;
+		letter-spacing: 1.32px;
+		margin-top: -50px;
+    	margin-left: -34px;
+	}
+
+	.about__button {
+		width: 314px;
+		height: 55px;
+		font-size: 18px;
+		line-height: 0.5;
+		letter-spacing: 1.8px;
+		margin-top: 50px;
+    	margin-left: -153px;
+	}
+
+	.about__images {
+        margin: -111px 0px 0px 164px;
+    }
+
+	.about__images_window {
+		width: 298px;
+		height: 198px;
+	}
+
+	.about__images_bedroom {
+		width: 280px;
+		height: 187px;
+		left: -71px;
+    	top: 233px;
+	}
+
+	.about__images_bathroom {
+		width: 213px;
+		height: 286px;
+		left: -154px;
+    	top: 117px;
+	}
+
+	.suite {
+		height: 810px;
+	}
+
+
+	.suite__hotel {
+		margin-top: 4px;
+    	margin-left: -2px;
+    	letter-spacing: 1.6px;
+	}
+
+	.subtitle__rooms {
+		margin-top: 12px;
+    	margin-left: -1px;
+		letter-spacing: 1px;
+	}
+
+	.suite__container {
+		display: block;
+		margin-left: 276px;
+	 }
+
+
+	.suite__images {
+		display: flex;
+    	flex-direction: column;
+    	margin-top: 201px;
+    	margin-left: -209px;
+	 }
+	    
+
+	.suite__images_image {
+		width: 430px;
+		height: 187px;
+	}
+
+	.suite__container_adriatic {
+		background-color: #f9f9f9;
+		width: 0px;
+		height: 0px;
+	}
+
+
+	.suite__adriatic {
+		margin-left: -433px;
+		margin-top: 21px;
+		
+	}
+
+	.suite__adriatic_name {
+		right: 410px;
+    	top: -60px;
+    	width: 173px;
+    	font-size: 18px;
+    	line-height: 1.14;
+    	letter-spacing: 2px;
+	}
+
+	.suite__atelier_name {
+		top: 2px;
+    	left: 25px;
+	}
+
+	.suite__images_atelier {
+		width: 426px;
+		height: 187px;
+		margin-left: 0px;
+    	margin-bottom: -68px;
+    	margin-top: 19px;
+	}
+
+	.suite__name_gallery {
+		top: -205px;
+    	left: 21px;
+	}
+
+	.gallery {
+    	height: 713px;
+    	background-color: #1c1c1c;
+    }
+
+    .gallery__container {
+    	justify-content: space-around;
+        width: 640px;
+	}
+
+	.gallery__container_images {
+    	width: 640px;
+    	display: flex;
+    	justify-content: space-between;
+    	margin-left: 122px;
+	}
+
+	.gallery__images {  
+		height: 105px;
+	}
+
+	.gallery__images_foto {
+		width: 156px;
+		height: 105px;
+		margin-left: 3px;
+    	margin-right: 1px;
+	}
+
+	.gallery__container_text {
+        background-color: transparent;
+        margin-top: 52px;
+    	margin-left: -598px;
+	}
+
+	.gallery__subtitle {
+		font-size: 18px;
+		line-height: 0.5;
+		letter-spacing: 0.1px;
+		width: 640px;
+		margin-top: 93px;
+    	margin-left: -46px;
+	}
+
+	.gallery__subtitle_container {
+		display: flex;
+		margin-top: 28px;
+    	margin-left: -12px;
+	}
+
+	.gallery__subtitle_white {
+    	margin: 0px -80px 0px 75px;
+    	letter-spacing: 1px;
+    	word-spacing: -5px;
+    }
+
+    .gallery__subtitle_broun {
+        margin: 0px 0px 0px -73px;
+    	letter-spacing: 1px;
+    }
+
+    .gallery_text {
+    	display: none;
+    }
+
+    .gallery_text_mobile {
+    	display: block;
+    	font-size: 22px;
+    	font-weight: 300;
+  		line-height: 1.64;
+  		letter-spacing: 1.32px;
+  		color: #878787;
+		width: 440px;
+		margin-top: -49px;
+    	margin-left: 31px;
+    }
+
+    .gallery__button {
+    	width: 335px;
+    	height: 61px;
+    	font-size: 18px;
+    	font-weight: 900;
+    	line-height: 0.5;
+    	letter-spacing: 1.8px;
+    	margin-top: -17px;
+    	margin-left: 106px;
+    }
+
+    .pluses {
+    	height: 90px;
+	}
+
+	.pluses__text { 
+		font-size: 16px;
+		font-weight: normal;
+		line-height: 1.63;
+		letter-spacing: normal;
+	}
+
+	.pluses__container {
+    	padding-top: 15px;
+        margin-left: 45px;
+        word-spacing: 3px;
+	}
+
+	.footer {
+		height: 44px;
+	}
+
+	.footer__links_link {
+		font-size: 16px;
+		font-weight: normal;
+	  	line-height: 0.56;
+		letter-spacing: 3.5px
+	}
+
+	.footer__links {
+		padding: 15px 0px 0px 47px;
+		box-sizing: border-box;
+    	width: 457px;
+        word-spacing: 3px;
+	}
+    
+}

@@ -6,16 +6,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="main.css">
-</head>
+	</head>
 
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
 				<img src="images/luxury-hotel.svg" class="header__logo">
+				<img src="images/icons/menu.svg" class="header__menu">
 				<nav>
 					<ul class="container header__links">
-						<li><a href="index.html" class="header__links_link">Hoome</a></li>
+						<li><a href="index.html" class="header__links_link">Home</a></li>
 						<li><a href="list.html" class="header__links_link">Rooms</a></li>
 						<li><a href="room.html" class="header__links_link">Single Room</a></li>
 						<li><a href="" class="header__links_link">Booking</a></li>
@@ -37,8 +38,8 @@
 				<form class="formContainer">
 					<div class="formContainer__inputs">
 						<div class="form__checkin">
-							CHECK-IN
-							<br>
+							<span class="form__name">CHECK-IN</span>
+							<br class="br">
 							<input type="text" placeholder="26" class="formContainer__inputs_input">
 							<select size="1" name="mouns" id="" class="formContainer__select">
 								<option>Jan</option>
@@ -56,8 +57,8 @@
 							</select>
 						</div>
 						<div class="form__checkout">
-							CHECK-OUT
-							<br>
+							<span class="form__name">CHECK-OUT</span>
+							<br class="br">
 							<input type="text" placeholder="28" class="formContainer__inputs_input">
 							<select name="mouns" id="" class="formContainer__select">
 								<option>Jan</option>
@@ -75,7 +76,7 @@
 							</select>
 						</div>
 						<div class="form__guests">
-							GUESTS
+							<span class="form__name">GUESTS</span>
 							<br>
 							<input type="text" placeholder="1" class="formContainer__inputs_input">
 						</div>
@@ -136,16 +137,16 @@
 					</div>
 					<div>
 						<ul class="suite__images">
-							<li> <img src="images/rooms/atelier.png" class="suite__images_image"></li>
-							<h4 class="suite__name">Atelier</h4>
-							<li><img src="images/rooms/piazza.jpg" class="suite__images_image suite__images_piazza"></li>
-							<h4 class="suite__name">Piazza</h4>
+							<li> <img src="images/rooms/atelier.png" class="suite__images_image suite__images_atelier"></li>
+							<h4 class="suite__name suite__adriatic_name suite__atelier_name">Atelier</h4>
+							<li><img src="images/rooms/piazza.jpg" class="suite__images_image suite__images_piazza suite__images_atelier"></li>
+							<h4 class="suite__name suite__name_piazza">Piazza</h4>
 						</ul>
 						<ul class="suite__images">
-							<li> <img src="images/rooms/gallery.png" class="suite__images_image"></li>
-							<h4 class="suite__name_gallery">Gallery</h4>
+							<li> <img src="images/rooms/gallery.png" class="suite__images_image suite__images_grand"></li>
+							<h4 class="suite__name_gallery suite__adriatic_name">Gallery</h4>
 							<li><img src="images/rooms/grand-piazza-suite.png" class="suite__images_image suite__images_grand"></li>
-							<h4 class="suite__name_gallery">Grand Piazza Suite</h4>
+							<h4 class="suite__name_gallery suite__name_piazza">Grand Piazza Suite</h4>
 						</ul>
 					</div>
 				</div>
@@ -158,15 +159,17 @@
 							<li> <img src="images/rooms/woman.jpg" class="gallery__images_foto"></li>
 							<li><img src="images/rooms/table.jpg" class="gallery__images_foto"></li>
 						</ul>	
-						<ul class="gallery__images">
+						<ul class="gallery__images gallery__images_mobile">
 							<li> <img src="images/rooms/balcon.jpg" class="gallery__images_foto"></li>
 							<li><img src="images/rooms/lady.jpg" class="gallery__images_foto"></li>
 						</ul>
 					</div>
 					<div class="gallery__container_text">
 						<h3 class="about__subtitle gallery__subtitle">LUXURY HOTEL & BEST RESORT</h3>
+						<div class="gallery__subtitle_container">
 						<h2 class="subtitle gallery__subtitle_white">Pearl of the </h2>
 						<h2 class="subtitle gallery__subtitle_broun">Adriatic</h2>
+						</div>
 
 						<table cellspacing="" class="gallery_text">
 							<tr>
@@ -175,6 +178,8 @@
 								
 							</tr>
 						</table>
+						<p class="gallery_text_mobile">Decorated with original art works by&nbsp;contemporary artists, all suites are air-conditioned and consist of&nbsp;a&nbsp;SMART&nbsp;TV, mini-bar and coffee/tea making facilities.
+						Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna&nbsp;et. Quisque euismod orci ut&nbsp;et&nbsp;lobortis. Blandit vel sapien vitae, condimentum ultricies magna et&nbsp;orci ut&nbsp;et&nbsp;lobortis, Phasellus enim</p>
 						
 						<button class="gallery__button">CHECK ALL PACKAGES</button>
 					</div>
