@@ -1,13 +1,3 @@
-
-@keyframes introMenuAnimation{
-	0%{
-		text-decoration: none;
-	}
-	100%{
-		text-decoration: underline;
-	}
-}
-
 .header__menu {
 	display: none;
 }
@@ -16,11 +6,17 @@
 	background-image: url("images/background/background-room.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 284px;
+	height: 408px;
 	background-position: bottom;
-	padding-top: 1px;
 }
 
+.roomIntro::before {
+	content:"";
+	background-image: linear-gradient(to top, #1c1c1c, #1c1c1c);
+	width: 100%;
+	height: 51px;
+	display: block;
+}
 
 .roomIntro__menu {
 	display: flex;
@@ -28,8 +24,8 @@
 	justify-content: space-around;
     width: 505px;
     position: relative;
-    top: 79%;
-    left: 462px;;
+    top: 73%;
+    left: 230px;
 }
 
 .roomIntro__menu_item{
@@ -39,15 +35,15 @@
 	letter-spacing: 1.35px;
 	color: #ffffff;
 	text-decoration: none;
+	padding-bottom: 4px;
 }
 
 .roomIntro__menu_item:hover{
-	animation: introMenuAnimation 1s 1 ease-in-out;
 	cursor: pointer;
+	border-bottom: solid 1px #878787;
 }
 
 .roomIntro__menu_item:focus{
-	animation: introMenuAnimation 4s 1 ease-in-out;
 	cursor: pointer;
 }
 
@@ -56,8 +52,8 @@
 	justify-content: space-around;
     width: 158px;
     position: relative;
-    top: 66%;
-    left: 1170px;
+    top: 63%;
+    left: 937px;
 }
 
 .roomIntro__price_300 {
@@ -75,12 +71,12 @@
 	line-height: 1.33;
 	letter-spacing: 1.16px;
 	color: #ffffff;
+	margin-top: 7px;
 }
 
 .room {
 	height: 930px;
 	display: flex;
-	margin-left: 232px;
 }
 
 .room__title {
@@ -295,8 +291,8 @@
 }
 
 .room__button {
-	width: 82%;
-	height: 32px;
+	width: 234px;
+    height: 31px;
 	background-color: #c19b76;
 	font-size: 8.5px;
 	font-weight: 900;
@@ -305,20 +301,28 @@
 	color: #ffffff;
 	border: none;
 	margin-left: 24px;
+	transition: background-color 2s, border 2s, color 2s;
 }
 
 .room__button:hover{
 	cursor: pointer;
+	background-color: #ffffff;
+	border: solid 1px #c19b76;
+	color: #c19b76;
+}
+
+.room__button:focus{
+	outline: none;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 
 	.roomIntro {
-		height: 157px;
+		height: 267px;
 	}
 
 	.roomIntro__menu {
-		top: 69%;
+		top: 63%;
     	left: 155px;
     	width: 430px;
 	}
@@ -329,7 +333,7 @@
 	}
 
 	.roomIntro__price {
-		top: 47%;
+		top: 49%;
     	left: 652px;
     	width: 135px;
 	}
@@ -479,8 +483,9 @@
 		font-size: 27px;
 		line-height: 0.54;
 		letter-spacing: -1.62px;
-		margin-top: 0px;
-    	margin-left: 4px;
+		margin-top: -9px;
+    	margin-left: 14px;
+    	margin-bottom: -10px;
 	}
 
 	.room__input_mouns {
@@ -494,6 +499,7 @@
 		font-size: 8px;
 		line-height: 1.81;
 		letter-spacing: 0.64px;
+		margin-top: 0px;
 	}
 
 	.room__button {
@@ -504,6 +510,14 @@
 		line-height: 1.61;
 		letter-spacing: 0.9px;
 		margin-left: 18px;
+		transition: background-color 2s, border 2s, color 2s;
+	}
+
+	.room__button:hover{
+		cursor: pointer;
+		background-color: #ffffff;
+		border: solid 1px #c19b76;
+		color: #c19b76;
 	}
 
 	.footer__links {
@@ -516,14 +530,14 @@
 	}
 }
 
-@media screen and (min-width: 640px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
 
 	.header__menu {
 		display: block;
 	}
 
 	.roomIntro { 
-		height: 205px;
+		height: 311px;
 	}
 
 	.roomIntro__menu {
@@ -536,6 +550,7 @@
 
 	.room {
 		height: 1320px;
+		margin-left: 232px;
 	}
 
 	.room__title {
@@ -545,7 +560,7 @@
 		color: #ffffff;
 		top: -178px;
     	position: relative;
-    	left: -388px;
+    	left: -386px;
     	text-transform: uppercase;
     	width: 600px;
 	}

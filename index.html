@@ -6,16 +6,19 @@
 	<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="main.css">
-	</head>
+</head>
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header id="header" class="header header__mobile">
 			<div class="container">
-				<img src="images/luxury-hotel.svg" class="header__logo">
-				<img src="images/icons/menu.svg" class="header__menu">
+				<a href="index.html"><img src="images/luxury-hotel.svg" class="header__logo"></a>
+				
 				<nav>
-					<ul class="container header__links">
+					<img src="images/icons/menu.svg" class="header__menu" onclick="changeNav()">
+					<img src="images/icons/close.svg" class="header__close" onclick="changeNav()">
+				
+					<ul class="container header__links header__links_mobile">
 						<li><a href="index.html" class="header__links_link">Home</a></li>
 						<li><a href="list.html" class="header__links_link">Rooms</a></li>
 						<li><a href="room.html" class="header__links_link">Single Room</a></li>
@@ -25,7 +28,6 @@
 					</ul>
 				</nav>
 			</div>
-
 		</header>
 
 		<main>
@@ -33,7 +35,7 @@
 				<div class="main__container">
 					<h3 class="main__subtitle">LUXURY HOTEL & BEST RESORT</h3> 
 					<h1 class="main__title">ENJOY A LUXURY EXPERIENCE</h1>
-					<button class="main__button"><a href="list.html" class="button__link">ROOMS & SUITES</a></button>
+					<a href="list.html" class="button__link"><button class="main__button">ROOMS & SUITES</button></a>
 				</div>
 				<form class="formContainer">
 					<div class="formContainer__inputs">
@@ -81,135 +83,138 @@
 							<input type="text" placeholder="1" class="formContainer__inputs_input">
 						</div>
 					</div>
-					<button class="form__button"><a href="list.html" class="button__link">CHECK AVAILABILITY</a></button>
+					<a href="list.html" class="button__link"><button class="form__button">CHECK AVAILABILITY</button></a>
 				</form>
-			</section>
+			</div>
+		</section>
 
-			<section class="about">
-				<div class="about__text">
-					<h3 class="about__subtitle about__subtitle_position">HOTEL BAYVIEW</h3>
-					<h2 class="subtitle">Pearl of the Adriatic</h2>
-					<p class="about__description">
-						Hotel Bayview is&nbsp;a&nbsp;luxurious boutique hotel located in&nbsp;the heart of&nbsp;Rovinj&rsquo;s lively Old town. Offering views of&nbsp;the harbor, St. Catherine&rsquo;s Island or&nbsp;the Main Square, each suite is&nbsp;fitted with design furniture and local art. Guests can relax at&nbsp;2&nbsp;on-site bars and a&nbsp;brasserie style restaurant.
+		<section class="about">
+			<div class="about__text">
+				<h3 class="about__subtitle about__subtitle_position">HOTEL BAYVIEW</h3>
+				<h2 class="subtitle">Pearl of the Adriatic</h2>
+				<p class="about__description">
+					Hotel Bayview is&nbsp;a&nbsp;luxurious boutique hotel located in&nbsp;the heart of&nbsp;Rovinj&rsquo;s lively Old town. Offering views of&nbsp;the harbor, St. Catherine&rsquo;s Island or&nbsp;the Main Square, each suite is&nbsp;fitted with design furniture and local art. Guests can relax at&nbsp;2&nbsp;on-site bars and a&nbsp;brasserie style restaurant.
+				</p>
+				<button class="about__button">ABOUT US</button>
+			</div>
+			<ul class="about__images">
+				<li>
+					<img src="images/rooms/window.png" class="about__images_window">
+				</li>
+				<li>
+					<img src="images/rooms/bedroom.png" class="about__images_bedroom">
+				</li>
+				<li>
+					<img src="images/rooms/bathroom.png" class="about__images_bathroom">
+				</li>
+			</ul>
+
+		</section>
+
+		<section class="suite">
+			<h3 class="about__subtitle suite__hotel">HOTEL BAYVIEW</h3>
+			<hr class="suite__line">
+			<h2 class="subtitle__rooms">Best Rooms</h2>
+			<div class="suite__container">
+				<div class="suite__container_adriatic">
+					<img src="images/rooms/adriatic-suite.png" class="suite__adriatic">
+					<h4 class="suite__adriatic_name">Adriatic Suite</h4>
+					<a href="room.html" class="suite__subtitle_link"><h4 class="suite__subtitle suite__subtitle_size">Adriatic Suite</h4></a>
+					
+					<table cellspacing="12" class="table">
+						<tr>
+							<td class="suite__description_7">7.5</td>
+							<td class="suite__description_reviews">5 Reviews</td>
+							<td><img src="images/icons/user.svg" class="suite__description_user"></td>
+							<td class="suite__description_reviews">3 guests</td>
+							<td><img src="images/icons/plan.svg" class="suite__description_plan"></td>
+							<td class="suite__description_reviews">57 m²</td>
+						</tr>
+					</table>
+
+
+					<p class="suite__text">
+						Offering 2&nbsp;balconies and views of&nbsp;Rovinj&rsquo;s Main Square and the lively waterfront and the main promenade.
 					</p>
-					<button class="about__button">ABOUT US</button>
+					<a href="room.html"><button class="suite__button">BOOK NOW FROM 300$</button></a>
 				</div>
-				<ul class="about__images">
-					<li>
-						<img src="images/rooms/window.png" class="about__images_window">
-					</li>
-					<li>
-						<img src="images/rooms/bedroom.png" class="about__images_bedroom">
-					</li>
-					<li>
-						<img src="images/rooms/bathroom.png" class="about__images_bathroom">
-					</li>
-				</ul>
-
-			</section>
-
-			<section class="suite">
-				<h3 class="about__subtitle suite__hotel">HOTEL BAYVIEW</h3>
-				<hr class="suite__line">
-				<h2 class="subtitle__rooms">Best Rooms</h2>
-				<div class="suite__container">
-					<div class="suite__container_adriatic">
-						<img src="images/rooms/adriatic-suite.png" class="suite__adriatic">
-						<h4 class="suite__adriatic_name">Adriatic Suite</h4>
-						<a href="room.html" class="suite__subtitle_link"><h4 class="suite__subtitle suite__subtitle_size">Adriatic Suite</h4></a>
-						
-						<table cellspacing="12" class="table">
-							<tr>
-								<td class="suite__description_7">7.5</td>
-								<td class="suite__description_reviews">5 Reviews</td>
-								<td><img src="images/icons/user.svg" class="suite__description_user"></td>
-								<td class="suite__description_reviews">3 guests</td>
-								<td><img src="images/icons/plan.svg" class="suite__description_plan"></td>
-								<td class="suite__description_reviews">57 m²</td>
-							</tr>
-						</table>
-
-
-						<p class="suite__text">
-							Offering 2&nbsp;balconies and views of&nbsp;Rovinj&rsquo;s Main Square and the lively waterfront and the main promenade.
-						</p>
-						<button class="suite__button">BOOK NOW FROM 300$</button>
-					</div>
-					<div>
-						<ul class="suite__images">
-							<li> <img src="images/rooms/atelier.png" class="suite__images_image suite__images_atelier"></li>
-							<h4 class="suite__name suite__adriatic_name suite__atelier_name">Atelier</h4>
-							<li><img src="images/rooms/piazza.jpg" class="suite__images_image suite__images_piazza suite__images_atelier"></li>
-							<h4 class="suite__name suite__name_piazza">Piazza</h4>
-						</ul>
-						<ul class="suite__images">
-							<li> <img src="images/rooms/gallery.png" class="suite__images_image suite__images_grand"></li>
-							<h4 class="suite__name_gallery suite__adriatic_name">Gallery</h4>
-							<li><img src="images/rooms/grand-piazza-suite.png" class="suite__images_image suite__images_grand"></li>
-							<h4 class="suite__name_gallery suite__name_piazza">Grand Piazza Suite</h4>
-						</ul>
-					</div>
+				<div>
+					<ul class="suite__images">
+						<li> <img src="images/rooms/atelier.png" class="suite__images_image suite__images_atelier"></li>
+						<h4 class="suite__name suite__adriatic_name suite__atelier_name">Atelier</h4>
+						<li><img src="images/rooms/piazza.jpg" class="suite__images_image suite__images_piazza suite__images_atelier"></li>
+						<h4 class="suite__name suite__name_piazza">Piazza</h4>
+					</ul>
+					<ul class="suite__images">
+						<li> <img src="images/rooms/gallery.png" class="suite__images_image suite__images_grand"></li>
+						<h4 class="suite__name_gallery suite__adriatic_name">Gallery</h4>
+						<li><img src="images/rooms/grand-piazza-suite.png" class="suite__images_image suite__images_grand"></li>
+						<h4 class="suite__name_gallery suite__name_piazza">Grand Piazza Suite</h4>
+					</ul>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section class="gallery">
-				<div class="gallery__container">
-					<div class="gallery__container_images">
-						<ul class="gallery__images">
-							<li> <img src="images/rooms/woman.jpg" class="gallery__images_foto"></li>
-							<li><img src="images/rooms/table.jpg" class="gallery__images_foto"></li>
-						</ul>	
-						<ul class="gallery__images gallery__images_mobile">
-							<li> <img src="images/rooms/balcon.jpg" class="gallery__images_foto"></li>
-							<li><img src="images/rooms/lady.jpg" class="gallery__images_foto"></li>
-						</ul>
-					</div>
-					<div class="gallery__container_text">
-						<h3 class="about__subtitle gallery__subtitle">LUXURY HOTEL & BEST RESORT</h3>
-						<div class="gallery__subtitle_container">
+		<section class="gallery">
+			<div class="gallery__container">
+				<div class="gallery__container_images">
+					<ul class="gallery__images">
+						<li> <img src="images/rooms/woman.jpg" class="gallery__images_foto"></li>
+						<li><img src="images/rooms/table.jpg" class="gallery__images_foto"></li>
+					</ul>	
+					<ul class="gallery__images gallery__images_mobile">
+						<li> <img src="images/rooms/balcon.jpg" class="gallery__images_foto"></li>
+						<li><img src="images/rooms/lady.jpg" class="gallery__images_foto"></li>
+					</ul>
+				</div>
+				<div class="gallery__container_text">
+					<h3 class="about__subtitle gallery__subtitle">LUXURY HOTEL & BEST RESORT</h3>
+					<div class="gallery__subtitle_container">
 						<h2 class="subtitle gallery__subtitle_white">Pearl of the </h2>
 						<h2 class="subtitle gallery__subtitle_broun">Adriatic</h2>
-						</div>
-
-						<table cellspacing="" class="gallery_text">
-							<tr>
-								<td class="gallery_text1">Decorated with original art works by&nbsp;contemporary artists, all suites are air-conditioned and consist of&nbsp;a&nbsp;SMART&nbsp;TV, mini-bar and coffee/tea making facilities.</td>
-								<td class="gallery_text2">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna&nbsp;et. Quisque euismod orci ut&nbsp;et&nbsp;lobortis. Blandit vel sapien vitae, condimentum ultricies magna et&nbsp;orci ut&nbsp;et&nbsp;lobortis, Phasellus enim</td>
-								
-							</tr>
-						</table>
-						<p class="gallery_text_mobile">Decorated with original art works by&nbsp;contemporary artists, all suites are air-conditioned and consist of&nbsp;a&nbsp;SMART&nbsp;TV, mini-bar and coffee/tea making facilities.
-						Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna&nbsp;et. Quisque euismod orci ut&nbsp;et&nbsp;lobortis. Blandit vel sapien vitae, condimentum ultricies magna et&nbsp;orci ut&nbsp;et&nbsp;lobortis, Phasellus enim</p>
-						
-						<button class="gallery__button">CHECK ALL PACKAGES</button>
 					</div>
+
+					<table cellspacing="" class="gallery_text">
+						<tr>
+							<td class="gallery_text1">Decorated with original art works by&nbsp;contemporary artists, all suites are air-conditioned and consist of&nbsp;a&nbsp;SMART&nbsp;TV, mini-bar and coffee/tea making facilities.</td>
+							<td class="gallery_text2">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna&nbsp;et. Quisque euismod orci ut&nbsp;et&nbsp;lobortis. Blandit vel sapien vitae, condimentum ultricies magna et&nbsp;orci ut&nbsp;et&nbsp;lobortis, Phasellus enim</td>
+							
+						</tr>
+					</table>
+					<p class="gallery_text_mobile">Decorated with original art works by&nbsp;contemporary artists, all suites are air-conditioned and consist of&nbsp;a&nbsp;SMART&nbsp;TV, mini-bar and coffee/tea making facilities.
+					Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna&nbsp;et. Quisque euismod orci ut&nbsp;et&nbsp;lobortis. Blandit vel sapien vitae, condimentum ultricies magna et&nbsp;orci ut&nbsp;et&nbsp;lobortis, Phasellus enim</p>
+					
+					<button class="gallery__button">CHECK ALL PACKAGES</button>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section class="pluses">
-				<div class="pluses__container">
-					<div class="pluses__text">
-						The closest rocky public beach is a 15-minute walk away.
-					</div>
-					<div class="pluses__text">
-						Pula Airport is at a distance of 25 mi away. 
-					</div>
-					<div class="pluses__text">
-						Free private parking is available outside the pedestrian zone.
-					</div>
+		<section class="pluses">
+			<div class="pluses__container">
+				<div class="pluses__text">
+					The closest rocky public beach is a 15-minute walk away.
 				</div>
-			</section>
+				<div class="pluses__text">
+					Pula Airport is at a distance of 25 mi away. 
+				</div>
+				<div class="pluses__text">
+					Free private parking is available outside the pedestrian zone.
+				</div>
+			</div>
+		</section>
 
-		</main>
-		<footer class="footer">
-			<ul class="footer__links">
-				<li><a href="index.html" class="footer__links_link">Home</a></li>
-				<li><a href="" class="footer__links_link">About Us</a></li>
-				<li><a href="" class="footer__links_link">Services</a></li>
-				<li><a href="" class="footer__links_link">Booking</a></li>
-				<li><a href="" class="footer__links_link">Contact</a></li>
-			</ul>
-		</footer>
-	</div>
+	</main>
+	<footer class="footer">
+		<ul class="footer__links">
+			<li><a href="index.html" class="footer__links_link">Home</a></li>
+			<li><a href="" class="footer__links_link">About Us</a></li>
+			<li><a href="" class="footer__links_link">Services</a></li>
+			<li><a href="" class="footer__links_link">Booking</a></li>
+			<li><a href="" class="footer__links_link">Contact</a></li>
+		</ul>
+	</footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

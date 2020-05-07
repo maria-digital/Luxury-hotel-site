@@ -11,13 +11,15 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header id="header" class="header header__mobile">
 			<div class="container">
-				<img src="images/luxury-hotel.svg" class="header__logo">
-				<img src="images/icons/menu.svg" class="header__menu">
+				<a href="index.html"><img src="images/luxury-hotel.svg" class="header__logo"></a>
+				<img src="images/icons/menu.svg" class="header__menu" onclick="changeNav()">
+				<img src="images/icons/close.svg" class="header__close" onclick="changeNav()">
+				
 				<nav>
-					<ul class="container header__links">
-						<li><a href="index.html" class="header__links_link">Hoome</a></li>
+					<ul class="container header__links header__links_mobile">
+						<li><a href="index.html" class="header__links_link">Home</a></li>
 						<li><a href="list.html" class="header__links_link">Rooms</a></li>
 						<li><a href="room.html" class="header__links_link">Single Room</a></li>
 						<li><a href="" class="header__links_link">Booking</a></li>
@@ -26,6 +28,7 @@
 					</ul>
 				</nav>
 			</div>
+
 		</header>
 
 		<main>
@@ -181,7 +184,7 @@
 							Offering 2&nbsp;balconies and views of&nbsp;Rovinj&rsquo;s 
 							Main Square and the lively waterfront.
 						</p>
-						<button class="search__button">BOOK NOW for 300$</button>
+						<a href="room.html"><button class="search__button">BOOK NOW for 300$</button></a>
 						</div>
 					</div>
 					</a>
@@ -272,5 +275,6 @@
 			</ul>
 		</footer>
 	</div>
+	<script src="script.js"></script>
 </body>
 </html>

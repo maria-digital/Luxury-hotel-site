@@ -11,13 +11,15 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+<header id="header" class="header header__mobile">
 			<div class="container">
-				<img src="images/luxury-hotel.svg" class="header__logo">
-				<img src="images/icons/menu.svg" class="header__menu">
+				<a href="index.html"><img src="images/luxury-hotel.svg" class="header__logo"></a>
+				<img src="images/icons/menu.svg" class="header__menu" onclick="changeNav()">
+				<img src="images/icons/close.svg" class="header__close" onclick="changeNav()">
+				
 				<nav>
-					<ul class="container header__links">
-						<li><a href="index.html" class="header__links_link">Hoome</a></li>
+					<ul class="container header__links header__links_mobile">
+						<li><a href="index.html" class="header__links_link">Home</a></li>
 						<li><a href="list.html" class="header__links_link">Rooms</a></li>
 						<li><a href="room.html" class="header__links_link">Single Room</a></li>
 						<li><a href="" class="header__links_link">Booking</a></li>
@@ -106,7 +108,7 @@
 						<div class="room__input_day">WESNESDAY</div>
 					</div>
 					</div>
-					<button class="room__button">BOOK NOW</button>
+					<a href=""><button class="room__button">BOOK NOW</button></a>
 				</div>
 			</section>
 
@@ -121,5 +123,6 @@
 			</ul>
 		</footer>
 	</div>
+	<script src="script.js"></script>
 </body>
 </html>
