@@ -16,12 +16,15 @@
 	height: 46px;
 	position: fixed;
     z-index: 9;
-    background-color: #1c1c1c;
     top: -1px;
     width: 1440px;
 }
 
-.container {
+.header, .form__button, .suite__description_7, .suite__button, .gallery__container, .gallery__container_text {
+	background-color: #1c1c1c;
+}
+
+.container, .formContainer, .formContainer__inputs, .suite__container, .suite__images, .gallery__container, .gallery__images, .footer__links {
 	display: flex;
 	justify-content: space-between;
 }
@@ -32,23 +35,21 @@
 	margin: 15px 0px 15px 281px;
 }
 
-.header__menu {
-	display: none;
-}
-
-.header__close {
+.header__menu, .header__close, .gallery_text_mobile {
 	display: none;
 }
 
 .header__links {
-	list-style: none;
 	width: 450px;
 	margin: 13px 276px 0px 0px;
 	padding: 0px 5px 0px 0px;
 }
 
+.header__links, .about__images, .suite__images, .gallery__images, .footer__links {
+	list-style: none;
+}
+
 .header__links_link {
-	text-decoration: none;
 	color: #878787;
 	font-size: 10.5px;
 	font-weight: normal;
@@ -59,6 +60,10 @@
     transition: color 2s, border-bottom 2s;
 }
 
+.header__links_link, .button__link, .suite__subtitle_link, .suite__subtitle_size, .footer__links_link {
+	text-decoration: none;
+}
+
 .header__links_link:hover{
 	color: #ffffff;
 	border-bottom: solid 1px #878787;
@@ -66,15 +71,16 @@
 }
 
 .main {
-	background-image: url("images/background/main-background.png");
-	background-size: cover;
+	background-image: url("images/background/main-background.png"); 
 	background-repeat: no-repeat;
 	background-position: bottom;
-	position: relative;
-	text-align: center;
+	background-attachment: fixed;
 	height: 247px;
-    z-index: 0;
-	padding: 0px 0px 380px 0px;
+    padding: 0px 0px 380px 0px;
+}
+
+.main, .main__container, .about__text {
+	text-align: center;
 }
 
 .main::before {
@@ -87,23 +93,21 @@
     position: absolute;
 }
 
-.main__container{
-	text-align: center;
-}
-
 .main__subtitle {
 	color: #ffffff;
-	font-size: 9px;
-	font-weight: normal;
 	line-height: 2.28;
 	letter-spacing: 1.1px;
 	margin-top: 72px;
 	padding-top: 122px;
 }
 
+.main__subtitle, .formContainer__inputs, .formContainer__select, .suite__description_reviews {
+	font-size: 9px;
+	font-weight: normal;
+}
+
 .main__title {
 	color: #ffffff;
-	font-family: 'Gilda Display', serif;
 	font-size: 52.5px;
 	font-weight: normal;
 	line-height: 1.28;
@@ -111,6 +115,10 @@
 	max-width: 500px;
 	margin: 0 auto;
 	padding-top: 18px;
+}
+
+.main__title, .formContainer__inputs_input, .formContainer__select, .subtitle, .subtitle__rooms, .suite__subtitle {
+	font-family: GildaDisplay;
 }
 
 .main__button {
@@ -138,14 +146,11 @@
 }
 
 .button__link {
-	text-decoration: none;
 	color: #ffffff;
 	transition: color 2s;
 }
 
 .formContainer {
-	display: flex;
-	justify-content: space-between;
 	width: 449px;
    	margin-left: 451px;
 }
@@ -154,10 +159,7 @@
 	width: 405px;
 	height: 100px;
 	display: flex;
-	justify-content: space-between;
 	background-color: #ffffff;
-	font-size: 9px;
-	font-weight: normal;
 	line-height: 2.28;
 	letter-spacing: 0.72px;
 	color: #a3a3a3;
@@ -168,12 +170,10 @@
 	margin: 19px -60px 0px 55px;
 }
 
-
 .formContainer__inputs_input {
 	width: 56px;
 	height: 40px;
 	color: #878787;
-	font-family: GildaDisplay;
 	font-size: 37.5px;
 	line-height: 0.55;
 	letter-spacing: -2.25px;
@@ -185,9 +185,6 @@
 }
 
 .formContainer__select {
-	font-family: GildaDisplay;
-	font-size: 9px;
-	font-weight: normal;
 	line-height: 2.28;
 	letter-spacing: -0.54px;
 	color: #1c1c1c;
@@ -207,7 +204,6 @@
 }
 
 .form__button {
-	background-color: #1c1c1c;
 	width: 135px;
 	height: 100px;
 	border: none;
@@ -239,7 +235,6 @@
 }
 
 .about__text {
-	text-align: center;
 	margin: 80px 0px 0px 325px;
 }
 
@@ -256,7 +251,6 @@
 }
 
 .subtitle {
-	font-family: GildaDisplay;
 	font-weight: normal;
 	font-size: 60px;
 	line-height: 1;
@@ -304,7 +298,6 @@
 }
 
 .about__images {
-	list-style: none;
 	display: flex;
 	margin: 50px 0px 0px 8px;
 }
@@ -354,7 +347,6 @@
 }
 
 .subtitle__rooms {
-	font-family: GildaDisplay;
 	font-size: 41.5px;
 	font-weight: normal;
 	line-height: 1.46;
@@ -364,10 +356,7 @@
     letter-spacing: 0.9px;
 }
 
-
 .suite__container {
-	display: flex;
-	justify-content: space-between;
     width: 860px;
     margin-left: 251px;
 }
@@ -398,7 +387,6 @@
 }
 
 .suite__subtitle {
-	font-family: GildaDisplay;
 	font-size: 22.5px;
 	font-weight: normal;
 	line-height: 0.7;
@@ -406,14 +394,9 @@
 	letter-spacing: 1px;
 }
 
-.suite__subtitle_link {
-	text-decoration: none;
-}
-
-.suite__subtitle_size{
+.suite__subtitle_size {
 	margin: -20px 222px 0px -25px;
 	text-align: center;
-	text-decoration: none;
 }
 
 .table {
@@ -423,7 +406,6 @@
 .suite__description_7 {
 	width: 21px;
 	height: 20px;
-	background-color: #1c1c1c;
 	font-size: 8.5px;
 	font-weight: normal;
 	line-height: 2.4;
@@ -432,10 +414,7 @@
 	text-align: center;
 }
 
-
 .suite__description_reviews {
-	font-size: 9px;
-	font-weight: normal;
 	line-height: 2.3;
 	color: #878787;
 	text-transform: uppercase;
@@ -445,7 +424,6 @@
 	width: 17px;
 	height: 17px;	
 }
-
 
 .suite__description_plan {
 	width: 16px;
@@ -467,7 +445,6 @@
 .suite__button {
 	width: 166px;
 	height: 35px;
-	background-color: #1c1c1c;
 	font-size: 8.5px;
 	font-weight: 900;
 	line-height: 2.4;
@@ -489,9 +466,6 @@
 }
 
 .suite__images{
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
 	position: relative;
 	z-index: 0;
 	width: 428px;
@@ -548,12 +522,9 @@
 }
 
 .gallery__container {
-	display: flex;
-	justify-content: space-between;
 	text-align: center;
 	width: 1440px;
     margin: 0 auto;
-    background-color: #1c1c1c;
 }
 
 .gallery__container_images{
@@ -562,9 +533,6 @@
 }
 
 .gallery__images {
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
 	height: 240px;
 	margin: 0px 0 0 -40px;
 }
@@ -577,7 +545,6 @@
 .gallery__container_text {
 	width: 720px;
 	height: 481px;
-	background-color: #1c1c1c;
 }
 
 .gallery__subtitle {
@@ -622,10 +589,6 @@
 	padding: 10px 0px 0px 50px;
 }
 
-.gallery_text_mobile {
-	display: none;
-}
-
 .gallery__button {
 	width: 165px;
 	height: 33px;
@@ -654,7 +617,6 @@
 	height: 175px;
 }
 
-
 .pluses__container {
 	padding-top: 48px;
 }
@@ -677,9 +639,6 @@
 }
 
 .footer__links {
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
 	width: 340px;
 	text-align: center;
 	padding: 23px 0px 0px 513px;
@@ -692,7 +651,6 @@
 	line-height: 2.15;
 	letter-spacing: 2px;
 	color: #ffffff;
-	text-decoration: none;
 	padding-bottom: 3px;
 	transition: color 2s, border-bottom 2s;
 }
@@ -711,6 +669,7 @@
 
 	.header {
 		height: 36px;
+		max-width: 1024px;
 	}
 
 	.header__logo {
@@ -722,8 +681,8 @@
 
 	.header__links {
 		width: 435px;
-		margin: 6px 434px 0px 0px;
-		word-spacing: 10px;
+		width: 430px;
+    	margin: 6px 24px 0px 0px;
 	}
 
 	.header__links_link {
@@ -780,12 +739,11 @@
     	text-align: center;
 	}  
 
-	.form__checkin {
+	.form__checkin, .form__checkout {
 		display: grid;
 	}
 
 	.form__checkout {
-		display: grid;
 		margin-left: 11px;
 	}
 
@@ -1145,7 +1103,6 @@
 		max-width: 640px;
 	}
 
-
 	.header {
 		height: 34px;
 		max-width: 640px;
@@ -1163,19 +1120,21 @@
 		display: none;
 	}
 
-	.header__mobile {
+	.header_mobile {
 		height: 335px;
+		overflow: hidden;
+    	transition: height 1s 0.5s ease-out;
 	}
 
-	.header__mobile .header__close {
+	.header_mobile .header__close {
 		display: block;
 	}
 
-	.header__mobile .header__menu {
+	.header_mobile .header__menu {
 		display: none;
 	}
 
-	.header__mobile .header__links_mobile{
+	.header_mobile .header__links_mobile{
 		display: block;
 	}
 
@@ -1387,7 +1346,6 @@
     	margin-bottom: 36px;
 	}
     
-
 	.subtitle, .subtitle__rooms {
 		font-size: 36px;
 		line-height: 0.75;
@@ -1422,7 +1380,6 @@
         padding-top: 6px;
     	padding-right: 14px;
 	}
-
 
 	.about__images {
         margin: 46px 0px 0px 165px;
@@ -1471,7 +1428,6 @@
 		margin-left: 274px;
 	 }
 
-
 	.suite__images {
 		display: flex;
     	flex-direction: column;
@@ -1479,7 +1435,6 @@
     	margin-left: -209px;
 	 }
 	    
-
 	.suite__images_image {
 		width: 430px;
 		height: 187px;
@@ -1490,7 +1445,6 @@
 		width: 0px;
 		height: 0px;
 	}
-
 
 	.suite__adriatic {
 		margin-left: -433px;

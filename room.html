@@ -11,13 +11,14 @@
 
 <body>
 	<div class="wrapper">
-<header id="header" class="header header__mobile">
+		<header id="header" class="header header_hide">
 			<div class="container">
 				<a href="index.html"><img src="images/luxury-hotel.svg" class="header__logo"></a>
-				<img src="images/icons/menu.svg" class="header__menu" onclick="changeNav()">
-				<img src="images/icons/close.svg" class="header__close" onclick="changeNav()">
 				
 				<nav>
+					<img src="images/icons/menu.svg" class="header__menu" onclick="changeNav()">
+					<img src="images/icons/close.svg" class="header__close" onclick="changeNav()">
+				
 					<ul class="container header__links header__links_mobile">
 						<li><a href="index.html" class="header__links_link">Home</a></li>
 						<li><a href="list.html" class="header__links_link">Rooms</a></li>
@@ -28,7 +29,6 @@
 					</ul>
 				</nav>
 			</div>
-
 		</header>
 
 		<main>
@@ -124,5 +124,7 @@
 		</footer>
 	</div>
 	<script src="script.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="paralax.js"></script>
 </body>
 </html>

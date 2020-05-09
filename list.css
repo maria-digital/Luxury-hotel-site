@@ -6,6 +6,7 @@
 	background-image: url("images/background/list_background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	position: relative;
 	height: 367px;
 	z-index: 0;
@@ -31,15 +32,15 @@
 	text-align: center;
 	color: #ffffff;
 	padding-top: 170px;
-    margin-left: -9px;
-  }
+	margin-left: -9px;
+}
 
 .search {
 	height: 932px;
 	display: flex;
 	padding-left: 280px;
 	padding-top: 9px;
-    box-sizing: border-box;
+	box-sizing: border-box;
 } 
 
 .search__container {
@@ -56,7 +57,7 @@
 	letter-spacing: 0.6px;
 	color: #ffffff;
 	padding-top: 37px;
-    margin-left: 4px;
+	margin-left: 4px;
 }
 
 .container__check {
@@ -64,7 +65,7 @@
 	list-style: none;
 	margin-top: 45px;
 	margin-bottom: -30px;
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
 .search__check {
@@ -89,21 +90,21 @@
 .search__input {
 	background-color: #151515;
 	margin-left: 15px;
-    margin-right: 17px;
+	margin-right: 17px;
 }
 
 input::placeholder {
-  color: #c19b76;
+	color: #c19b76;
 }
 
 .search__mouns {
 	color: #c19b76;
 	background-color: #151515;
- 	margin-left: -18px;
+	margin-left: -18px;
 }
 
 .search__guests {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .search__line {
@@ -129,23 +130,18 @@ input::placeholder {
 }
 
 .search__checkbox {
-	width: 10px;
-	height: 10px;
-	border-radius: 1.1px;
-	border: solid 0.4px #b3b3b3;
-	background-color: #ffffff;
 	position: absolute;
 	z-index: -1;
 	opacity: 0;
-	margin-top: 1px;
-    margin-left: -3px;
+	margin-left: -6px;
+	margin-top: 4px;
 }
 
 .search__checkbox + label {
 	position: relative;
 	cursor: pointer;
-	padding: 0px 0 0 18px;
 }
+
 
 .search__checkbox + label:before {
 	content: '';
@@ -153,33 +149,23 @@ input::placeholder {
 	width: 10px;
 	height: 10px;
 	background-color: #ffffff;
-	border-radius: 1.1px;
-	border: solid 0.4px #b3b3b3;
-	margin-left: -21px;
-	box-shadow: inset 0 2px 3px #1c1c1c;
-}
-
-
-.search__checkbox + label:after {
-	content: '';
-	width: 10px;
-	height: 10px;
-	position: absolute;
-	background-color: #ffffff;
-	border: solid 0.4px #b3b3b3;
-	top: -4px;
-    left: 18px;
-    margin-left: -20px;
-    box-shadow: inset 0 1px 3px #1c1c1c;
+	border-radius: 2.6px;
+	border: solid 0.2px #b3b3b3;
+	margin-left: -23px;
+	box-shadow: inset 0 1px 3px #1c1c1c;
+	margin-top: 4px;
 }
 
 .search__checkbox:checked + label:before {
+	content: "\2713";
 	background-color: #ffffff;
 	border: solid 0.4px #b3b3b3;
+	font-size: 16px;
+	line-height: 4px;
 }
 
-.search__checkbox:focus + label:before {
-	box-shadow: inset 0 2px 3px #1c1c1c;
+.search__servises_name {
+	margin-left: 19px;
 }
 
 .search__servises {
@@ -204,14 +190,14 @@ input::placeholder {
 	width: 48px;
 	height: 24px;
 	background-color: #1c1c1c;
-    font-size: 9.5px;
-    font-weight: normal;
-    line-height: 2.16;
-    letter-spacing: -0.19px;
-    color: #ffffff;
-    margin-right: 15px;
-    padding-left: 4px;
-    padding-top: 2px;
+	font-size: 9.5px;
+	font-weight: normal;
+	line-height: 2.16;
+	letter-spacing: -0.19px;
+	color: #ffffff;
+	margin-right: 15px;
+	padding-left: 4px;
+	padding-top: 2px;
 }
 
 .search__m {
@@ -233,7 +219,7 @@ input::placeholder {
 	list-style: none;
 	width: 82%;
 	margin-top: 11px;
-    margin-left: -38px;
+	margin-left: -38px;
 }
 
 .search__rating {
@@ -261,9 +247,9 @@ input::placeholder {
 .container__images {
 	display: flex;
 	width: 97%;
-    justify-content: space-between;
-    margin-top: 25px;
-    margin-left: 20px;
+	justify-content: space-between;
+	margin-top: 25px;
+	margin-left: 20px;
 }
 
 .search__container_image {
@@ -285,7 +271,7 @@ input::placeholder {
 	position: relative;
 	z-index: 1;
 	right: -20px;
-    top: -45px;
+	top: -45px;
 }
 
 .search__subtitle_image {
@@ -295,7 +281,7 @@ input::placeholder {
 
 .search__description {
 	margin-top: -1px;
-    margin-left: 13px;
+	margin-left: 13px;
 }
 
 .search__text {
@@ -306,7 +292,7 @@ input::placeholder {
 	letter-spacing: -0.3px;
 	color: #878787;
 	margin: 5px 0px 0px 20px;
-    word-spacing: 3px;
+	word-spacing: 3px;
 }
 
 
@@ -322,8 +308,8 @@ input::placeholder {
 	color: #c9a787;
 	text-align: center;
 	margin-top: 16px;
-    margin-left: 20px;
-    transition: background-color 2s, color 2s;
+	margin-left: 20px;
+	transition: background-color 2s, color 2s;
 }
 
 .search__button:hover{
@@ -346,21 +332,21 @@ input::placeholder {
 
 	.intro__title {
 		font-size: 32px;
- 		line-height: 1.48;
- 		letter-spacing: -0.8px;
-    	margin-left: 8px;
-    	margin-top: -8px;
+		line-height: 1.48;
+		letter-spacing: -0.8px;
+		margin-left: 8px;
+		margin-top: -8px;
 	}
 
 	.search {
-    	height: 745px;
-    	margin-left: 232px;
+		height: 745px;
+		margin-left: 232px;
 	}
 
 	.search__container {
 		width: 209px;
-    	height: 223px;
-    	margin-left: -311px;
+		height: 223px;
+		margin-left: -311px;
 	}
 
 	.search__subtitle {
@@ -368,17 +354,17 @@ input::placeholder {
 		line-height: 1.32;
 		letter-spacing: 0.44px;
 		padding-top: 24px;
-    	padding-left: -67px;
-    	padding-right: 18px;
+		padding-left: -67px;
+		padding-right: 18px;
 	}
 
 	.container__action {
 		margin-top: -18px;
-    	margin-right: 10px;
+		margin-right: 10px;
 	}
 
 	.container__check {
-		 margin-bottom: -34px;
+		margin-bottom: -34px;
 	}
 
 	.search__check {
@@ -403,92 +389,92 @@ input::placeholder {
 	.formContainer__inputs_input {
 		border-style: none;
 		margin-top: 6px;
-    	margin-left: 1px;
+		margin-left: 1px;
 	}
-    
+	
 	.search__mouns {
 		width: 17px;
 		height: 8px;
-  		font-size: 9px;
+		font-size: 9px;
 		line-height: 1.61;
 		letter-spacing: -0.54px;
 	}
 
 	.search__guests {
-    	margin: -2px;
+		margin: -2px;
 	}
 
 	.search__line {
 		width: 199px;
 		height: 2px;
 		margin-left: -304px;
-  	}
+	}
 
-  	.servises__title {
-  		font-size: 11px;
+	.servises__title {
+		font-size: 11px;
 		line-height: 1.32;
 		letter-spacing: 0.66px;
 		margin-left: -311px;
-    	margin-top: -9px;
-  	}
+		margin-top: -9px;
+	}
 
-  	.search__checkbox {
-  		width: 8px;
+	.search__checkbox {
+		width: 8px;
 		height: 7px;
-  	}
+	}
 
-  	.search__servises {
-  		font-size: 9px;
-	  	line-height: 1.9;
+	.search__servises {
+		font-size: 9px;
+		line-height: 1.9;
 		letter-spacing: 0.54px;
 		margin-left: -346px;
 		width: 209px;
-  	}
-
-  	.servises__title_room {
-  		margin-top: 7px;
-    	margin-bottom: -8px;
-  	}
-
-  	.servises__title_reviews{
-  		margin-top: -6px;
-  	}
-
-  	.search__size {
-  		width: 30px;
-		height: 17px;
-		font-size: 8px;
-  		line-height: 1.81;
-		letter-spacing: -0.16px;
-		margin-top: 2px;
-  	}
-
-  	.search__roomsize {
-        margin-left: -352px;
 	}
 
-  	.search__m {
-  		font-size: 6.5px;
-  		line-height: 2.23;
-		letter-spacing: normal;
-  	}
+	.servises__title_room {
+		margin-top: 7px;
+		margin-bottom: -8px;
+	}
 
-  	.search__rating {
-  		width: 21px;
-		height: 18px;
-    	font-size: 8px;
-  		line-height: 1.81;
+	.servises__title_reviews{
+		margin-top: -6px;
+	}
+
+	.search__size {
+		width: 30px;
+		height: 17px;
+		font-size: 8px;
+		line-height: 1.81;
 		letter-spacing: -0.16px;
-  	}
+		margin-top: 2px;
+	}
 
-  	.search__reviews {
-       	margin-top: 3px;
-    	margin-left: -350px;
-    	width: 164px;
+	.search__roomsize {
+		margin-left: -352px;
+	}
+
+	.search__m {
+		font-size: 6.5px;
+		line-height: 2.23;
+		letter-spacing: normal;
+	}
+
+	.search__rating {
+		width: 21px;
+		height: 18px;
+		font-size: 8px;
+		line-height: 1.81;
+		letter-spacing: -0.16px;
+	}
+
+	.search__reviews {
+		margin-top: 3px;
+		margin-left: -350px;
+		width: 164px;
 	}
 
 	.list {
-	display: none;
+		display: none;
 	}
 
 	.container__list_images {
@@ -499,63 +485,63 @@ input::placeholder {
 		margin-left: -91px;
 	}
 
-  	.search__container_image {
-  		width: 198px;
+	.search__container_image {
+		width: 198px;
 		height: 275px;
-  	}
-
-  	.search__image {
-  		width: 198px;
-		height: 132px;
-  	}
-
-  	.search__suitename {
-  		font-size: 9px;
-  		line-height: 1.61;
-		letter-spacing: 0.9px;
-		right: -17px;
-    	top: -38px;
-  	}
-
-  	.search__subtitle_image {
-  		font-size: 16px;
-  		line-height: 0.72;
-		letter-spacing: normal;
-		margin-top: -30px;
-    	margin-left: 16px;
-  	}
-
-  	.search__description {
-    	margin-top: 1px;
 	}
 
-  	.search__text {
-  		font-size: 8px;
+	.search__image {
+		width: 198px;
+		height: 132px;
+	}
+
+	.search__suitename {
+		font-size: 9px;
+		line-height: 1.61;
+		letter-spacing: 0.9px;
+		right: -17px;
+		top: -38px;
+	}
+
+	.search__subtitle_image {
+		font-size: 16px;
+		line-height: 0.72;
+		letter-spacing: normal;
+		margin-top: -30px;
+		margin-left: 16px;
+	}
+
+	.search__description {
+		margin-top: 1px;
+	}
+
+	.search__text {
+		font-size: 8px;
 		line-height: 2.25;
 		width: 154px;
 		margin-bottom: -2px;
-    	margin-top: 0px;
-  	}
+		margin-top: 0px;
+	}
 
-  	.search__button {
-  		width: 165px;
+	.search__button {
+		width: 165px;
 		height: 34px;
 		border: solid 1.1px #c19b76;
-  		font-size: 9px;
+		font-size: 9px;
 		font-weight: 900;
 		line-height: 1.61;
 		letter-spacing: 0.9px;
 		margin-top: 12px;
-    	margin-left: 17px;
-    	padding-left: 25px;
-    	padding-right: 25px;
-  	}
+		margin-left: 17px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 
-  	.container__images_1024 {
-  		margin-top: 45px;
-  	}
+	.container__images_1024 {
+		margin-top: 45px;
+	}
 
-  	}
+}
 
 @media screen and (max-width: 1023px) {
 	.header__menu {
@@ -571,24 +557,24 @@ input::placeholder {
 		line-height: 0.63;
 		letter-spacing: -0.6px;
 		margin-top: 16px;
-    	margin-left: -11px;
+		margin-left: -11px;
 	}
 
 	.search {
 		height: 1450px;
-    	display: block;
-    	width: 640px;
-    	padding-left: 0px;
-   }
+		display: block;
+		width: 640px;
+		padding-left: 0px;
+	}
 
-   .container__list {
-   	 	margin-top: -12px;
-    	margin-left: 58px;
-   }
+	.container__list {
+		margin-top: -12px;
+		margin-left: 58px;
+	}
 
 	.search__container {
 		width: 522px;
-    	height: 238px;
+		height: 238px;
 	}
 
 	.search__subtitle {
@@ -596,7 +582,7 @@ input::placeholder {
 		line-height: 0.41;
 		letter-spacing: 1px;
 		padding-top: 18px;
-    	margin-left: 4px;
+		margin-left: 4px;
 	}
 
 	.container__action {
@@ -614,28 +600,28 @@ input::placeholder {
 
 	.search__check {
 		width: 150px;
-   		height: 80px;
+		height: 80px;
 		font-size: 14px;
-    	line-height: 0.64;
+		line-height: 0.64;
 		letter-spacing: 1.12px;
 	}
 
 	.container__input {
-    	display: flex;
-    	flex-direction: column;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.list .formContainer__inputs_input{
 		width: 40px;
-    	height: 30px;
-    	font-size: 36px;
+		height: 30px;
+		font-size: 36px;
 		line-height: 0.25;
 		letter-spacing: -2.16px;
 	}
 
 	.search__input {
 		margin-left: 5px;
-    	margin-top: 9px;
+		margin-top: 9px;
 	}
 
 	.check__title_in {
@@ -658,7 +644,7 @@ input::placeholder {
 		width: 81px;
 	}
 
-	.search__line {
+	.search__line, .search__m, .search__description {
 		display: none;
 	}
 
@@ -666,11 +652,11 @@ input::placeholder {
 		font-size: 22px;
 		line-height: 0.41;
 		letter-spacing: 2px;
-    	margin-top: 37px;
-    	margin-bottom: 25px;
-    	text-align: center;
-    	padding-left: -62px;
-        margin-right: 62px;
+		margin-top: 37px;
+		margin-bottom: 25px;
+		text-align: center;
+		padding-left: -62px;
+		margin-right: 62px;
 	}
 
 	.servises__title_room {
@@ -678,8 +664,8 @@ input::placeholder {
 	}
 
 	.search__checkbox {
-    	width: 14px;
-    	height: 14px;
+		width: 14px;
+		height: 14px;
 	}
 
 	.search__servises {
@@ -687,43 +673,39 @@ input::placeholder {
 		line-height: 2.1;
 		letter-spacing: 0.96px;
 		width: 540px;
-    	margin-left: 0px;
+		margin-left: 0px;
 	}
 
 	.search__roomsize {
 		margin-left: 116px;
-    	margin-top: -11px;
-	    box-sizing: border-box;
-    	padding-top: 6px;
-    	padding-left: 41px;
+		margin-top: -11px;
+		box-sizing: border-box;
+		padding-top: 6px;
+		padding-left: 41px;
 	}
-   
+	
 	.search__size {
 		width: 69px;
-    	height: 30px;
+		height: 30px;
 		font-size: 14px;
 		line-height: 0.64;
 		letter-spacing: -0.28px;
 		margin-right: 34px;
 		box-sizing: border-box;
-    	padding-top: 12px;
-    	padding-left: 7px;
-	}
-
-	.search__m {
-		display: none;
+		padding-top: 12px;
+		padding-left: 7px;
 	}
 
 	.servises__title_reviews {
 		margin-top: 50px;
-    	margin-bottom: 0px;
-    	margin-left: 4px;
+		margin-bottom: 0px;
+		margin-left: 4px;
 	}
 
 	.search__reviews {
 		margin-left: 10px;
-    	margin-top: 14px;
-    	width: 421px;
+		margin-top: 14px;
+		width: 421px;
 	}
 
 	.search__rating {
@@ -733,7 +715,7 @@ input::placeholder {
 		line-height: 0.64;
 		letter-spacing: -0.28px;
 		box-sizing: border-box;
-    	padding-top: 7px;
+		padding-top: 7px;
 	}
 
 	.list {
@@ -743,19 +725,19 @@ input::placeholder {
 		line-height: 0.41;
 		letter-spacing: 1.32px;
 		text-align: center;
-    	margin-top: 31px;
-    	margin-left: -3px;
-    	margin-bottom: -41px;
+		margin-top: 31px;
+		margin-left: -3px;
+		margin-bottom: -41px;
 	}
 
 	.container__images {
-    	display: block;
-    	margin-bottom: -9px;
+		display: block;
+		margin-bottom: -9px;
 	}
 
 	.container__list_images {
 		margin-top: 58px;
-    	margin-left: 36px;
+		margin-left: 36px;
 	}
 
 	.search__container_image {
@@ -767,14 +749,14 @@ input::placeholder {
 
 	.search__container_1 {
 		display: flex;
-    	flex-direction: row-reverse;
+		flex-direction: row-reverse;
 	}
 
 	.search__image {
 		width: 198px;
 		height: 133px;
 		margin-top: 17px;
-    	margin-left: 12px;
+		margin-left: 12px;
 	}
 
 	.search__suitename {
@@ -782,41 +764,41 @@ input::placeholder {
 		line-height: 0.64;
 		letter-spacing: 1.7px;
 		right: -25px;
-    	top: -47px;
+		top: -47px;
 	}
 
 	.search__suitename_gallery{
 		top: 109px;
-    	left: -184px;
-    	white-space: nowrap;
+		left: -184px;
+		white-space: nowrap;
 	}
 
 	.search__suitename_atelier {
 		left: 43px;
-    	top: 105px;
+		top: 105px;
 	}
 
 	.search__suitename_grand {
 		top: 106px;
-    	left: 149px;
-    	white-space: nowrap;
+		left: 149px;
+		white-space: nowrap;
 	}
 
-    .suite__subtitle{
-    	display: block;
-    }
+	.suite__subtitle{
+		display: block;
+	}
 
 	.search__subtitle_image{
 		font-size: 22px;
 		line-height: 0.32;
-	    letter-spacing: 1px;
-    	margin-top: 23px;
-    	margin-left: 22px;
+		letter-spacing: 1px;
+		margin-top: 23px;
+		margin-left: 22px;
 	}
 
 	.search__subtitle_atelier {
 		margin-left: 50px;
-    	margin-top: 18px;
+		margin-top: 18px;
 	}
 
 	.search__subtitle_gallery {
@@ -825,15 +807,11 @@ input::placeholder {
 
 	.search__image_gallery {
 		margin-left: -46px;
-    	margin-right: 35px;
+		margin-right: 35px;
 	}
 
 	.search__subtitle_grand {
 		margin-left: 26px;
-	}
-
-	.search__description {
-		display: none;
 	}
 
 	.search__text {
@@ -847,7 +825,7 @@ input::placeholder {
 
 	.search__text_gallery {
 		margin-left: -49px;
-    	letter-spacing: 1.5px;
+		letter-spacing: 1.5px;
 	}
 
 	.search__text_grand {
@@ -875,4 +853,3 @@ input::placeholder {
 
 
 
-    

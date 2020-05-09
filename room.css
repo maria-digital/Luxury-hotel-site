@@ -6,8 +6,8 @@
 	background-image: url("images/background/background-room.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	height: 408px;
-	background-position: bottom;
 }
 
 .roomIntro::before {
@@ -19,13 +19,16 @@
 }
 
 .roomIntro__menu {
-	display: flex;
 	list-style: none;
-	justify-content: space-around;
     width: 505px;
-    position: relative;
     top: 73%;
     left: 230px;
+}
+
+.roomIntro__menu, .roomIntro__price {
+	display: flex;
+	position: relative;
+	justify-content: space-around;
 }
 
 .roomIntro__menu_item{
@@ -48,10 +51,7 @@
 }
 
 .roomIntro__price {
-	display: flex;
-	justify-content: space-around;
-    width: 158px;
-    position: relative;
+	width: 158px;
     top: 63%;
     left: 937px;
 }
@@ -556,7 +556,7 @@
 	.room__title {
 		font-size: 48px;
 		line-height: 0.63;
-		letter-spacing: 0.8px;
+		letter-spacing: -0.1px;
 		color: #ffffff;
 		top: -178px;
     	position: relative;

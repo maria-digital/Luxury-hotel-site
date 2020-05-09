@@ -7,17 +7,15 @@
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="main.css">
 </head>
-
 <body>
 	<div class="wrapper">
-		<header id="header" class="header header__mobile">
+		<header id="header" class="header header_hide">
 			<div class="container">
 				<a href="index.html"><img src="images/luxury-hotel.svg" class="header__logo"></a>
-				
 				<nav>
 					<img src="images/icons/menu.svg" class="header__menu" onclick="changeNav()">
 					<img src="images/icons/close.svg" class="header__close" onclick="changeNav()">
-				
+					
 					<ul class="container header__links header__links_mobile">
 						<li><a href="index.html" class="header__links_link">Home</a></li>
 						<li><a href="list.html" class="header__links_link">Rooms</a></li>
@@ -29,9 +27,8 @@
 				</nav>
 			</div>
 		</header>
-
 		<main>
-			<section class="main">
+			<section data-speed="10" data-type="background" class="main">
 				<div class="main__container">
 					<h3 class="main__subtitle">LUXURY HOTEL & BEST RESORT</h3> 
 					<h1 class="main__title">ENJOY A LUXURY EXPERIENCE</h1>
@@ -87,7 +84,6 @@
 				</form>
 			</div>
 		</section>
-
 		<section class="about">
 			<div class="about__text">
 				<h3 class="about__subtitle about__subtitle_position">HOTEL BAYVIEW</h3>
@@ -108,9 +104,7 @@
 					<img src="images/rooms/bathroom.png" class="about__images_bathroom">
 				</li>
 			</ul>
-
 		</section>
-
 		<section class="suite">
 			<h3 class="about__subtitle suite__hotel">HOTEL BAYVIEW</h3>
 			<hr class="suite__line">
@@ -131,8 +125,6 @@
 							<td class="suite__description_reviews">57 m²</td>
 						</tr>
 					</table>
-
-
 					<p class="suite__text">
 						Offering 2&nbsp;balconies and views of&nbsp;Rovinj&rsquo;s Main Square and the lively waterfront and the main promenade.
 					</p>
@@ -188,7 +180,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section class="pluses">
 			<div class="pluses__container">
 				<div class="pluses__text">
@@ -202,7 +193,6 @@
 				</div>
 			</div>
 		</section>
-
 	</main>
 	<footer class="footer">
 		<ul class="footer__links">
@@ -214,7 +204,8 @@
 		</ul>
 	</footer>
 </div>
-
 <script src="script.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="paralax.js"></script>
 </body>
 </html>
